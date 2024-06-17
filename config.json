@@ -1,8 +1,8 @@
 {
   "publicProps": {
     "title": "Add a title for your lesson/project",
-    "baseURL": "NEBULA-content-template",
-    "repoName": "NEBULA-content-template",
+    "baseURL": "green-digital-skills",
+    "repoName": "green-digital-skills",
     "repoOwner": "esciencecenter-digital-skills",
     "organization": "Netherlands eScience Center",
     "categoryOrder": ["Category1", "Category2"]
