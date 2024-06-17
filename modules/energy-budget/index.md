@@ -1,10 +1,9 @@
 ---
-id: 0
-trl: medium
-category: Category1
-title: Title of module 1
+id: 1
+category: Lecture
+title: Energy Budget
 author: eScience Center
-thumbnail: "nlesc-dummy.png"
+thumbnail: "energy-budget-thumbnail.avif"
 visibility: visible
 ---
 

@@ -1,10 +1,10 @@
 ---
 id: 1
 trl: medium
-category: Category2
-title: Title of module 2
+category: Lecture
+title: Optimizing Energy Usage
 author: eScience Center
-thumbnail: "nlesc-dummy.png"
+thumbnail: "optimizing-thumbnail.avif"
 visibility: visible
 ---
 
