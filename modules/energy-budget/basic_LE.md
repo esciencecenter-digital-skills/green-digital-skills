@@ -12,8 +12,12 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
-## Increasing carbon footprint of computing and IT
+## Increasing carbon footprint of computing and ICT
 
+
+<center>
+<img src="media/ICT_EnergyConsumption_Jones_2018.png" width="55%">
+</center>
 
 Note:
 
