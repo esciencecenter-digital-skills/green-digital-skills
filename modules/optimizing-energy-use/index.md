@@ -1,6 +1,5 @@
 ---
-id: 1
-trl: medium
+id: 2
 category: Lecture
 title: Optimizing Energy Usage
 author: eScience Center
