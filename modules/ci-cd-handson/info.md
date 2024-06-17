@@ -4,4 +4,4 @@ type: info
 order: 0
 ---
 
-Learning objectives of Module 1
+How do I set up or adapt my continuous integration system so that tests run only when needed? 
