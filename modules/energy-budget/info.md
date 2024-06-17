@@ -4,6 +4,10 @@ type: info
 order: 0
 ---
 
+## Learning Objectives
+
+In this module you will learn to answer the following questions:
+
 * Why is green computing important?
 * What is energy and power in the context of computing?
 * What is an energy budget and what is it for?
