@@ -1,0 +1,44 @@
+name: Generate Config json File (Execute it only upon repository initialisation)
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions: write-all
+
+jobs:
+    create-config:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout content
+              uses: actions/checkout@v4
+            
+            - name: Create config.json
+              run: |
+                echo '{
+                  "publicProps": {
+                    "title": "Add a title for your lesson/project",
+                    "baseURL": "${{ github.event.repository.name }}",
+                    "repoName": "${{ github.event.repository.name }}",
+                    "repoOwner": "esciencecenter-digital-skills",
+                    "organization": "Netherlands eScience Center",
+                    "categoryOrder": ["Category1", "Category2"]
+                  }
+                }' > config.json
+
+            - name: Commit and push config.json
+              run: |
+                git config --global user.email "action@github.com"
+                git config --global user.name "GitHub Action"
+                git add config.json
+                git commit -m "Create config.json" || exit 0   # Exits gracefully if there's nothing to commit
+                git push
+
+            - name: Disable this workflow once it has been run once on instantiation
+              shell: bash
+              run: |
+                gh workflow disable -R $GITHUB_REPOSITORY "${{ github.workflow }}"
+              env:
+                GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
