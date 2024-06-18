@@ -19,6 +19,9 @@ order: 2
 <img src="media/ICT_EnergyConsumption_Jones_2018.png" width="55%">
 </center>
 
+As researchers, we are not always aware of the cost and energy
+requirements (thus CO2 eq.) of the compute we use daily.
+
 Note:
 
 Add notes to the presenter...
@@ -26,6 +29,11 @@ Add notes to the presenter...
 ===
 
 <!-- .slide: data-state="standard" -->
+
+Computing carbon footprint can be split is two main
+contribution:
+ - manufactoring
+ - usage
 
 ## Manufacturing and amortizing
 Life-cycle footprint
@@ -68,10 +76,51 @@ Add notes to the presenter...
 
 ## Power consumption of computing hardware
 
-CPU power over years
-GPU power over years
+CPU power over years: increase
+GPU power over years: increase
 
 Scaling by Flops
+- Modern CPU are drawing more power, but getting more flops/W
+- GPU introduce a further jump in flops/W
+
+Example of Snellius: same amount of flops for 1/5 of the power (Ben slides)
+
+Note:
+
+Add notes to the presenter...
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
+## Cluster/server energy usage
+
+Static power draw:
+ - memory
+ - network card
+ - CPU leakage current ~ # of cores
+is not proportional to compute.
+Once the server is built and in use, maximizing occupancy
+increase the power efficiency as static power draw is
+amortized.
+
+Note:
+
+Add notes to the presenter...
+
+===
+
+## CPU energy usage
+
+CPU increased clock rate to squeeze more Flops out.
+Initialy amortizes the leakage current, so more
+energy efficient.
+
+As clockrate increase, power increase too but not at
+a linear rate because the voltage in the circuit needs to
+be increased too in order to send signal faster.
+Power ~ P_0 + k * V^2 * f_c (sort of)
 
 Note:
 
