@@ -65,14 +65,14 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## What should we aim for?
-- It's the same as with money, we need to think of cost-benefit
-- It depends what you do with it
-- If people can make a case for why they need a lot of money, they should be able to make the case for their large carbon footprint
-- Problem is, in research, the energy cost is effectively decoupled from the cost
-- If a project is cheap financially, but has a large carbon cost, there should be an explicit justification why
-- Want to be energy proportionate - there should be a reasonable assumption their benefits are going to outweigh the environmental costs
-- What about the extra red tape we don't want for researchers? All applications must estimate the environmental impact of their models. They did this in France and researchers still applied. The Green Algorithms Calculator was required to be used for the applications. Researchers accepted it was a fair request and still continued applying.
+## What is too much energy?
+- Do the potential benefits outweigh the environmental costs?
+- **We should think of energy (or CO2) the same way we think of money**
+  - What matters is the _cost-benefit_ ratio
+  - Is €1M a lot? Not if it leads to curing a major disease
+- Currently researchers are used to making the scientific case for the money they request
+- They should also be able to make the case for the corresponding carbon footprint
+- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
 
 Note:
 
@@ -82,8 +82,9 @@ Note:
 
 ## The online calculator
 
-- The idea of the online green algorithms calculator is to make it quick and easy
-- Also a Green Algorithms for HPC tool
+- The Green Algorithms online calculator makes it quick and easy to estimate the carbon footprint
+- Can be found here: <http://calculator.green-algorithms.org/>
+- There is also a Green Algorithms tool for HPC
 
 Note:
 
@@ -91,12 +92,45 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Does it matter what language you use?
-- Paper ranked C++ and Rust at the top, things like python at the bottom
-- Depends how you use it
-- However, if you do ML in Python you're not actually using python. Under the surface, it's basically c++ or something like it
-- Yes, the language matters, but most important is that the tools we are using are as efficient as possible, because they will be used so much (your own analysis scripts probably don't matter so much)
-- Don't have enough RSEs to do all the coding and optimizations
+<iframe src="http://calculator.green-algorithms.org/"></iframe>
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Extra burden on researchers
+
+- Is this just more work for researchers when filling out grant applications?
+- All applications must estimate the environmental impact of their models.
+- They did this in France and researchers still applied. The Green Algorithms Calculator was required to be used for the applications. Researchers accepted it was a fair request and still continued applying.
+- If a project is cheap financially, but has a large carbon cost, there should be an explicit justification why
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## What language should I use?
+- Typical conception of energy efficiency:
+  - C++ and Rust at the top
+  - Python and R at the bottom
+- There is a lot of truth in this but there are a lot of important considerations
+- **Many major numerical libraries in Python are not Python "under the surface"**
+  - The core is usually C++ or something like that.
+  - e.g. PyTorch, Tensorflow, numpy (and many others)
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## What should we optimize then?
+- **It is important that frequently used tools are as efficient as possible**
+- Your single-use analysis scripts probably don't matter so much - just use the easiest language for the job
+- Optimization is not free and costs development time (and energy) especially in lower level languages like C
+- Generally there are not enough RSEs to do all the coding and optimizations, and researchers don't have time
 
 Note:
 
