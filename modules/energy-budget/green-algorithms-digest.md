@@ -24,7 +24,7 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-# Footprint of modern computing
+# Typical footprint
 - Carbon footprint of data centres anually is around 100 MT of CO2 equivalent
   - That is the same as the entire US aviation in the same time.
   - Not all these data centres are doing HPC
