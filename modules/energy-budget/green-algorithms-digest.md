@@ -69,6 +69,11 @@ Note:
 - Loïc Lannelongue started a project called Green Algorithms: 
 - Made a calculator to estimate energy cost and carbon footprint of your algorithm
 - Necessary for assessing how to make computing more environmentally sustainable
+
+Note:
+
+===
+
 <!-- .slide: data-state="standard" -->
 
 ## The GREENER framework
@@ -147,7 +152,7 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Basic energy considerations
+## Minimizing energy use
 - Ultimately depends on the resources you use
 - Number of CPU cores is clearly a large contributor
 - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
