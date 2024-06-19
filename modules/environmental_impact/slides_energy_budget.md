@@ -76,13 +76,11 @@ Note:
 
 ===
 
-<!-- .slide: data-state="empty" -->
-
-<iframe src="https://app.electricitymaps.com/map"></iframe>
+<!-- .slide: data-state="empty-slide" data-background-iframe="https://app.electricitymaps.com/map" -->
 
 ===
 
-<!-- .slide: data-state="empty" -->
+<!-- .slide: data-state="standard" -->
 
 # Dutch specific energy mix
 
@@ -267,9 +265,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="empty" -->
-
-<iframe src="http://calculator.green-algorithms.org/"></iframe>
+<!-- .slide: data-state="empty-slide" data-background-iframe="http://calculator.green-algorithms.org/" -->
 
 ===
 
