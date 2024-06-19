@@ -1,5 +1,5 @@
 ---
-title: Reading material
+title: Useful links
 type: reading
 order: 3
 ---
