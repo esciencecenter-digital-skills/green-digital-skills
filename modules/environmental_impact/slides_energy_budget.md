@@ -73,11 +73,17 @@ Note:
 Note:
 
 
+
 ===
 
 <!-- .slide: data-state="empty" -->
 
 <iframe src="https://app.electricitymaps.com/map"></iframe>
+
+===
+
+<!-- .slide: data-state="empty" -->
+<iframe src="https://www.nowtricity.com/country/netherlands"></iframe>
 
 ===
 
