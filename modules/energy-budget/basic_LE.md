@@ -32,11 +32,11 @@ Add notes to the presenter...
 
 Computing carbon footprint can be split is two main
 contribution:
- - manufactoring
+ - embodied: from raw material extraction, to distribution
  - usage
 
 ## Manufacturing and amortizing
-Life-cycle footprint
+Production -> delivery -> usage -> recycle
 
 ## Usage
 Powering, memory
@@ -83,7 +83,12 @@ Scaling by Flops
 - Modern CPU are drawing more power, but getting more flops/W
 - GPU introduce a further jump in flops/W
 
-Example of Snellius: same amount of flops for 1/5 of the power (Ben slides)
+Example of Snellius: same amount of flops for 1/5 of the power
+when using GPUs (Ben slides)
+
+-> Using modern hardware help reduce energy consumption
+-> balancing act between amortizing embodied carbon and decreased
+energy efficiency (comparatively) over time
 
 Note:
 
