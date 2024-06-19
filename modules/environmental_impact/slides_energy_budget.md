@@ -25,23 +25,107 @@ requirements (thus CO2 eq.) of the compute we use daily.
 
 <!-- .slide: data-state="standard" -->
 
-Computing carbon footprint can be split is two main
-contribution:
- - embodied: from raw material extraction, to distribution
- - usage
-
-## Manufacturing and amortizing
-Production -> delivery -> usage -> recycle
-
-## Usage
-Powering, memory
-
+## Data centre metrics
+- Power Usage Effectiveness (PUE)
+- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+- Best data centres are now down to about 10% extra for cooling. Used to be around 100%.
 
 Note:
 
 ===
 
 <!-- .slide: data-state="standard" -->
+
+## PUE of datacenter
+
+Modern data centers only need about 10% extra power
+for cooling and such on top of the compute required power.
+
+PUE = P_{total} / P_{compute}
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Energy Carbon intensity
+- Carbon intensity has a large spatial and temporal variability.
+- Extreme differences between countries
+- Countries with very low carbon intensity: 20g per kWh
+- Countries with high carbon intensity (e.g. Australia): 700g per kWh
+- You can make a big difference by running the exact same thing on the same hardware, but in a different country
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+# Typical footprint
+- Carbon footprint of data centres anually is around 100 MT of CO2 equivalent
+  - That is the same as the entire US aviation in the same time.
+  - Not all these data centres are doing HPC
+- About 500 Tonnes of CO2 estimated for training GPT3
+  - IPC says we should aim for 2 tonnes of CO2 per person per year to keep global warming in check. 
+  - Not every model has such huge impacts, but we need to be mindful
+
+Note:
+
+
+===
+
+<!-- .slide: data-state="empty" -->
+
+<iframe src="https://app.electricitymaps.com/map"></iframe>
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Contributions
+
+- Computing carbon footprint can be split into two main contributions:
+  - *Embodied*: from raw material extraction, to distribution
+  - *Usage*: Powering, memory
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Manufacturing and amortizing
+  - Production -> delivery -> usage -> recycle
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Typical values of energy
+
+| Energy (J) | Examples | Equ. gCO2 |
+| :-------- | -------: |--------:|
+| 1.0e0 | ???? | |
+| 1.0e1 | ???? | |
+| 1.0e2 | ???? | |
+| 1.0e3 (kJ) | ???? | |
+| 1.0e4 | ???? | |
+| 1.0e5 | ???? | |
+| 1.0e6 (MJ) | ???? | |
+| 3.6e6 (1 kWh)| ???? | 305 |
+| 1.0e7 | ???? | |
+| 1.0e8 | ???? | |
+| 1.0e9 (0.27 MWh) | ???? | |
+
+Note:
+
+Do you have a feel for how much 1 Joule actually is?
+Press down arrow to see the examples for different orders of magnitude.
+
+==
 
 ## Typical values of energy
 
@@ -59,9 +143,9 @@ Note:
 | 1.0e8 | Averaged daily cons. of NL home | |
 | 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
 
-Note:
 
 ===
+
 
 <!-- .slide: data-state="standard" -->
 
@@ -120,58 +204,6 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Data centre metrics
-- Power Usage Effectiveness (PUE)
-- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centres are now down to about 10% extra for cooling. Used to be around 100%.
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## PUE of datacenter
-
-Modern data centers only need about 10% extra power
-for cooling and such on top of the compute required power.
-
-PUE = P_{total} / P_{compute}
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Energy Carbon intensity
-- Carbon intensity has a large spatial and temporal variability.
-- Extreme differences between countries
-- Countries with very low carbon intensity: 20g per kWh
-- Countries with high carbon intensity (e.g. Australia): 700g per kWh
-- You can make a big difference by running the exact same thing on the same hardware, but in a different country
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-# Typical footprint
-- Carbon footprint of data centres anually is around 100 MT of CO2 equivalent
-  - That is the same as the entire US aviation in the same time.
-  - Not all these data centres are doing HPC
-- About 500 Tonnes of CO2 estimated for training GPT3
-  - IPC says we should aim for 2 tonnes of CO2 per person per year to keep global warming in check. 
-  - Not every model has such huge impacts, but we need to be mindful
-
-Note:
-
-
-===
-
-<!-- .slide: data-state="standard" -->
-
 ## What is too much energy?
 - Do the potential benefits outweigh the environmental costs?
 - **We should think of energy (or CO2) the same way we think of money**
@@ -187,7 +219,7 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Green Algorithms
+## Estimating impact
 - Loïc Lannelongue started a project called Green Algorithms: 
 - Made a calculator to estimate energy cost and carbon footprint of your algorithm
 - Necessary for assessing how to make computing more environmentally sustainable
@@ -226,7 +258,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="empty" -->
 
 <iframe src="http://calculator.green-algorithms.org/"></iframe>
 
