@@ -67,8 +67,6 @@ Powering, memory
 
 Note:
 
-Add notes to the presenter...
-
 ===
 
 <!-- .slide: data-state="standard" -->
@@ -90,8 +88,6 @@ Add notes to the presenter...
 | 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
 
 Note:
-
-Add notes to the presenter...
 
 ===
 
@@ -115,8 +111,6 @@ energy efficiency (comparatively) over time
 
 Note:
 
-Add notes to the presenter...
-
 ===
 
 
@@ -135,8 +129,6 @@ amortized.
 
 Note:
 
-Add notes to the presenter...
-
 ===
 
 ## CPU energy usage
@@ -152,7 +144,16 @@ Power ~ P_0 + k * V^2 * f_c (sort of)
 
 Note:
 
-Add notes to the presenter...
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Data centre metrics
+- Power Usage Effectiveness (PUE)
+- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+- Best data centres are now down to about 10% extra for cooling. Used to be around 100%.
+
+Note:
 
 ===
 
@@ -167,82 +168,12 @@ PUE = P_{total} / P_{compute}
 
 Note:
 
-Add notes to the presenter...
-
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Energy carbon intensity
-
-Carbon intensity has a large spatial and temporal variability.
-
-Note:
-
-Add notes to the presenter...
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Title of the first 
-
-<center>
-<img src="media/fig-dummy.png" width="55%">
-</center>
-
-Note:
-
-Add notes to the presenter...
-
-===
-<!-- .slide: data-state="standard" -->
-
-## Title of the first 
-
-<center>
-<img src="media/fig-dummy.png" width="55%">
-</center>
-
-Note:
-
-Add notes to the presenter...
-
-===
-<!-- .slide: data-state="standard" -->
-
-## Title of the first 
-
-<center>
-<img src="media/fig-dummy.png" width="55%">
-</center>
-
-Note:
-
-Add notes to the presenter...
-
-===
-
-<!-- .slide: data-state="keepintouch" -->
-
-
-www.esciencecenter.nl
-
-info@esciencecenter.nl
-
-020 - 460 47 70
-
-===
-
-<!-- .slide: data-state="title" -->
-
-# Digest of Code for Thought podcast into rough slides
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Carbon intensity
+## Energy Carbon intensity
+- Carbon intensity has a large spatial and temporal variability.
 - Extreme differences between countries
 - Countries with very low carbon intensity: 20g per kWh
 - Countries with high carbon intensity (e.g. Australia): 700g per kWh
@@ -264,17 +195,6 @@ Note:
 
 Note:
 
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Data centre metrics
-- Power Usage Effectiveness (PUE)
-- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centres are now down to about 10% extra for cooling. Used to be around 100%.
-
-Note:
 
 ===
 
