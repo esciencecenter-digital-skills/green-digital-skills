@@ -277,47 +277,6 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" -->
-
-## What language should I use?
-- Typical conception of energy efficiency:
-  - C++ and Rust at the top
-  - Python and R at the bottom
-- There is a lot of truth in this but there are a lot of important considerations
-- **Many major numerical libraries in Python are not Python "under the surface"**
-  - The core is usually C++ or something like that.
-  - e.g. PyTorch, Tensorflow, numpy (and many others)
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## What software should we optimize?
-- **It is important that frequently used tools are as efficient as possible**
-- Your single-use analysis scripts probably don't matter so much - just use the easiest language for the job
-- Optimization is not free and costs development time (and energy) especially in lower level languages like C
-- Generally there are not enough RSEs to do all the coding and optimizations, and researchers don't have time
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Minimizing energy use
-- Ultimately depends on the resources you use
-- Number of CPU cores is clearly a large contributor
-- Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
-- Think about WHEN we run a job on a server. Energy mix different at different times.
-- Can use tools such as the Carbon Aware Task Scheduler - tells you what is the best time to run in the next 48 hours.
-- Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
-
-Note:
-
-===
-
 <!-- .slide: data-state="keepintouch" -->
 
 www.esciencecenter.nl
