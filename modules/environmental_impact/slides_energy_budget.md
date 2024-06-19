@@ -83,7 +83,10 @@ Note:
 ===
 
 <!-- .slide: data-state="empty" -->
-<iframe src="https://www.nowtricity.com/country/netherlands"></iframe>
+
+# Dutch specific energy mix
+
+[Nowtricity](https://www.nowtricity.com/country/netherlands")
 
 ===
 
