@@ -28,7 +28,7 @@ requirements (thus CO2 eq.) of the compute we use daily.
 ## Data centre metrics
 - Power Usage Effectiveness (PUE)
 - Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centres are now down to about 10% extra for cooling. Used to be around 100%.
+- Best data centers are now down to about 10% extra for cooling. Used to be around 100%.
 
 Note:
 
@@ -52,7 +52,7 @@ Note:
 ## Energy Carbon intensity
 - Carbon intensity has a large spatial and temporal variability.
 - Extreme differences between countries
-- Countries with very low carbon intensity: 20g per kWh
+- Countries with very low carbon intensity (e.g. Norway): 20g per kWh
 - Countries with high carbon intensity (e.g. Australia): 700g per kWh
 - You can make a big difference by running the exact same thing on the same hardware, but in a different country
 
@@ -84,7 +84,7 @@ Note:
 
 # Dutch specific energy mix
 
-[Nowtricity](https://www.nowtricity.com/country/netherlands")
+[Nowtricity](https://www.nowtricity.com/country/netherlands)
 
 ===
 
