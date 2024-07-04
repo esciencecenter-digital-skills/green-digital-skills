@@ -12,38 +12,114 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
-## Growing energy use
+## Why is information and communication technology (ICT) under scrutiny ?
 
-![Energy consumption](media/ICT_EnergyConsumption_Jones_2018.png)
+Predicted major increase in electricity demand: from 8% to 21% in 2030.
+
+Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+
+![Energy consumption ICT](media/ICT_EnergyConsumption_Jones_2018.png)
 
 Note:
 
-As researchers, we are not always aware of the cost and energy
-requirements (thus CO2 eq.) of the compute we use daily.
+On the graph:
+ - 4 components to ICT demand: network infra., consumer device (not including IoT-connected devices), data center and production from first three components (cradle-to-gate)
+ - this is an expected prediction, best and worst case scenario are 12% and 50%, resp.
+
+As researchers we use devices (laptops, workstations), local/national clusters (e.g. Snellius) and cloud services (SURF Cloud, AWS, ...).
+Our day2day work embedded in ICT.
 
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Data centre metrics
-- Power Usage Effectiveness (PUE)
+## Where is energy used in ICT ?
+
+All ICT devices are powered by electricity.
+In particular electrons themselves are used to perform the
+operations encoded in your softwares.
+Over the past 40 years, the number of operations processors
+can crunch per seconds (FLOPs) continuously increased, albeit at a smaller rate past 2003.
+
+![Consumer CPU performances](media/CPUFlops_overTime.png)
+
+Note:
+
+Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Patterson D. A., Computer Architecture (5th edition)) 
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Where is energy used in ICT (Con't) ?
+
+This trend extends to supercomputers (e.g. Snellius) and data centers. Top500 records performances
+of the world's (500) biggest computers on the same problem for over 30 years:
+
+![TOP500 GFLOPS](media/top500_performance_evolution.svg)
+
+Initaly growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
+kept the curve on track with Moore's law even though transitor/surface is increasing slower than Moore's law.
+
+Note:
+
+Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## CPU energy consumption: how does it relates to FLOPs ?
+
+Increase in FLOPs mostly related to:
+ - improved manufacturing, more transistor/surface (Moore's law)
+ - low level instructions handling improvements
+ - increase in CPU clock rate (until mid-2000)
+
+What does it means for energy ?
+ - More transistors lead to more power, however smaller transistors need less voltage 
+ - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
+ - Active power consumption of CPUs: ~ P_0 + C * V(f_c)^2 * f_c ~ f_c^3
+    f_c: clock rate
+    V: voltage, higher voltage needed with higher clockrate to transfer information faster
+ - Energy: power * time, time needed 1/f_c (fixed number of operations) -> energy ~ f_c^2
+    
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Computer performances: FLOPs/Watt
+
+Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
+The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
+Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
+Compared to Koomey's prediction: factor 2 improvement every 1.57 years.
+
+![Green500 efficiency](media/green500_efficiency_evolution.svg)
+
+Note:
+
+Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU after 2019).
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Data centers
+- compute and/or storage
+- efficiency characterized by their Power Usage Effectiveness (PUE):
+    PUE = P_{total_facility} / P_{IT_facility}
+
 - Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centers are now down to about 10% extra for cooling. Used to be around 100%.
+- Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+
+![Data center PUE](media/PUE_DataCenter.svg)
+
 
 Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## PUE of datacenter
-
-Modern data centers only need about 10% extra power
-for cooling and such on top of the compute required power.
-
-PUE = P_{total} / P_{compute}
-
-Note:
+ - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
 
 ===
 
@@ -58,6 +134,8 @@ Note:
 
 Note:
 
+So far, we've talked about energy -> a proxy for CO2 emission, using the energy carbon intensity
+
 ===
 
 <!-- .slide: data-state="standard" -->
@@ -71,7 +149,6 @@ Note:
   - Not every model has such huge impacts, but we need to be mindful
 
 Note:
-
 
 
 ===
@@ -90,20 +167,11 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Contributions
+## Overall contribution of ICT
 
 - Computing carbon footprint can be split into two main contributions:
   - *Embodied*: from raw material extraction, to distribution
-  - *Usage*: Powering, memory
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Manufacturing and amortizing
-  - Production -> delivery -> usage -> recycle
+  - *Usage*: Powering, memory, infrastructure
 
 Note:
 
@@ -149,63 +217,6 @@ Press down arrow to see the examples for different orders of magnitude.
 | 1.0e7 | Human energy need per day | |
 | 1.0e8 | Averaged daily cons. of NL home | |
 | 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
-
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-## Power consumption of computing hardware
-
-CPU power over years: increase
-GPU power over years: increase
-
-Scaling by Flops
-- Modern CPU are drawing more power, but getting more flops/W
-- GPU introduce a further jump in flops/W
-
-Example of Snellius: same amount of flops for 1/5 of the power
-when using GPUs (Ben slides)
-
--> Using modern hardware help reduce energy consumption
--> balancing act between amortizing embodied carbon and decreased
-energy efficiency (comparatively) over time
-
-Note:
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-## Cluster/server energy usage
-
-Static power draw:
- - memory
- - network card
- - CPU leakage current ~ # of cores
-is not proportional to compute.
-Once the server is built and in use, maximizing occupancy
-increase the power efficiency as static power draw is
-amortized.
-
-Note:
-
-===
-
-## CPU energy usage
-
-CPU increased clock rate to squeeze more Flops out.
-Initialy amortizes the leakage current, so more
-energy efficient.
-
-As clockrate increase, power increase too but not at
-a linear rate because the voltage in the circuit needs to
-be increased too in order to send signal faster.
-Power ~ P_0 + k * V^2 * f_c (sort of)
-
-Note:
 
 ===
 
