@@ -18,3 +18,4 @@ order: 3
 ## Useful links
 * <https://www.nowtricity.com/country/netherlands/>
 * <https://www.datacentermap.com/the-netherlands/>
+* <https://app.electricitymaps.com/map>
