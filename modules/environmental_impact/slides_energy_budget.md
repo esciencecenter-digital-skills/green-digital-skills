@@ -138,6 +138,10 @@ So far, we've talked about energy -> a proxy for CO2 emission, using the energy 
 
 ===
 
+<!-- .slide: data-state="empty-slide" data-background-iframe="https://app.electricitymaps.com/map" -->
+
+===
+
 <!-- .slide: data-state="standard" -->
 
 # Typical footprint
@@ -153,9 +157,6 @@ Note:
 
 ===
 
-<!-- .slide: data-state="empty-slide" data-background-iframe="https://app.electricitymaps.com/map" -->
-
-===
 
 <!-- .slide: data-state="standard" -->
 
