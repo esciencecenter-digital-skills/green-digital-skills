@@ -1,5 +1,5 @@
 ---
-id: 2
+order: 3
 category: Workshop
 title: High Performance Computing
 author: eScience Center
