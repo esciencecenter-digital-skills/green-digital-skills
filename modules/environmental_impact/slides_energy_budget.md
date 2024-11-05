@@ -12,13 +12,21 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
-## Why is information and communication technology (ICT) under scrutiny ?
+### ICT under scrutiny?
 
-Predicted major increase in electricity demand: from 8% to 21% in 2030.
+<div style="width: 40%; float: left; margin-top: 1%">
 
-Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+* Information Computing Technology (ICT) 
+* Predicted major increase in electricity demand:
+- from 8% to 21% in 2030.
 
-![Energy consumption ICT](media/ICT_EnergyConsumption_Jones_2018.png)
+* Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+
+</div>
+
+<div style="width: 60%; float: right">
+<img src="media/ICT_EnergyConsumption_Jones_2018.png" width="100%")
+</div>
 
 Note:
 
@@ -33,17 +41,26 @@ Our day2day work embedded in ICT.
 
 <!-- .slide: data-state="standard" -->
 
-## Where is energy used in ICT ?
+### What is using the energy?
 
-All ICT devices are powered by electricity.
-In particular electrons themselves are used to perform the
-operations encoded in your softwares.
-Over the past 40 years, the number of operations processors
-can crunch per seconds (FLOPs) continuously increased, albeit at a smaller rate past 2003.
+<div style="width: 40%; float: left; margin-top: 1%">
+
+* Devices are powered by electricity.
+* Electrons themselves are used to perform the operations encoded in your softwares.
+* Number of operations processors can crunch per second has continuously increased.
+
+</div>
+
+<div style="width: 60%; float: right">
 
 ![Consumer CPU performances](media/CPUFlops_overTime.png)
 
+</div>
+
 Note:
+
+Over the past 40 years, the number of operations processors
+can crunch per second has continuously increased
 
 Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Patterson D. A., Computer Architecture (5th edition)) 
 
@@ -51,17 +68,17 @@ Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Pat
 
 <!-- .slide: data-state="standard" -->
 
-## Where is energy used in ICT (Con't) ?
+### Supercomputers are also getting more powerful
+
+![TOP500 GFLOPS](media/top500_performance_evolution.svg)
+
+Note:
 
 This trend extends to supercomputers (e.g. Snellius) and data centers. Top500 records performances
 of the world's (500) biggest computers on the same problem for over 30 years:
 
-![TOP500 GFLOPS](media/top500_performance_evolution.svg)
-
-Initaly growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
+Initially growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
 kept the curve on track with Moore's law even though transitor/surface is increasing slower than Moore's law.
-
-Note:
 
 Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
 
