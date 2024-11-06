@@ -84,9 +84,13 @@ We want you to get set up with the tools you might need and know where to look t
 
 <!-- .slide: data-state="standard" -->
 
-### Projects on Climate related issues
+### Why do we care?
 
 ![Relevant projects at NLeSC](media/relevant-projects.png)
+
+Note:
+At eScience Center we have many projects concerning environmental destruction due to climate change.
+We all have expertise in HPC and (computationally) efficient computing so the energy aspects are increasingly interesting to us too.
 
 ===
 
