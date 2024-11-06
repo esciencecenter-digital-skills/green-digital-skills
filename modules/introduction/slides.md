@@ -15,10 +15,25 @@ order: 1
 
 <!-- .slide: data-state="standard" -->
 
-### Who are we?
+### Who we are
 
-* Netherlands eScience Center
-* SURF
+<div style="width: 60%; float: left; margin-top: 1%">
+
+- Netherlands eScience Center
+  - The national centre for research software
+  - Collaboratively design sustainable software with researchers, and build digital skills and expertise through teaching
+- SURF
+  - The ICT cooperative of Dutch education and research institutions
+
+</div>
+
+<div style="width: 40%; float: right">
+
+<img src="media/nlesc.svg" width="50%" />
+
+<img src="media/surf.svg" width="50%" />
+
+</div>
 
 ===
 
@@ -26,16 +41,10 @@ order: 1
 
 ### Before we start
 
-* You are a diverse crowd!
-
-* No one-size-fits-all approach to going green
-
-* This is a broad and high-level introduction to a broad, deep area
-- 2 year Masters course ?
-- ASTRON?
-- Often HPC, very technical
-
-* We want to leave you with an overview of the relevant ideas and get you set up
+- You are a diverse crowd!
+- No one-size-fits-all approach to going green
+- This is a broad and high-level introduction to a broad, deep area
+- We want to help you find the aspect you are interested in and get you set up
 
 Note:
 
@@ -76,8 +85,8 @@ We want you to get set up with the tools you might need and know where to look t
 <!-- .slide: data-state="standard" -->
 
 ### Projects on Climate related issues
-- Copernicus Attribution
-- ISIFAR?
+
+![Relevant projects at NLeSC](media/relevant-projects.png)
 
 ===
 
