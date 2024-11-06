@@ -152,6 +152,8 @@ rather than reduced.
 
 * Are you thinking about this the right way?
 * Is green computing really a purely technical issue?
+* Is your footprint by computing really your biggest contribution to the climate crisis?
+* What are other low hanging fruits you can tackle?
 
 Note:
 In practice, reducing energy use overall is more about organizational policy and value judgements about what the expected return is for a given amount of energy used.
