@@ -12,6 +12,24 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
+### We will try to answer
+-[]  _How much energy is a lot of energy?_
+- _Does Information Computing Technology use a lot of energy?_
+- _Where is the energy going?_
+- _What does this mean for carbon production?_
+- _What can we do about it?_
+- _Will these things help?_
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## _How much energy is a lot of energy?_
+
+===
+
+<!-- .slide: data-state="standard" -->
+
 ## Typical values of energy
 
 | Energy (J) | Examples | Equ. gCO2 |
@@ -53,10 +71,15 @@ Press down arrow to see the examples for different orders of magnitude.
 
 ===
 
+<!-- .slide: data-state="standard" -->
+
+## _Does Information Computing Technology use a lot of energy?_
+
+===
 
 <!-- .slide: data-state="standard" -->
 
-### ICT under scrutiny?
+### ICT under scrutiny
 
 <div style="width: 40%; float: left; margin-top: 1%">
 
@@ -80,6 +103,53 @@ On the graph:
 
 As researchers we use devices (laptops, workstations), local/national clusters (e.g. Snellius) and cloud services (SURF Cloud, AWS, ...).
 Our day2day work embedded in ICT.
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Overall contribution of ICT
+
+- Computing carbon footprint can be split into two main contributions:
+  - *Embodied*: from raw material extraction, to distribution
+  - *Usage*: Powering, memory, infrastructure
+
+Note:
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
+### Data centers
+
+<div style="width: 40%; float: right">
+
+* Compute and/or storage
+* Efficiency characterized by Power Usage Effectiveness (PUE)
+- PUE = P_{total_facility} / P_{IT_facility}
+
+* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+
+</div>
+
+
+<div style="width: 60%; float: left; margin-top: 1%">
+
+![Data center PUE](media/PUE_DataCenter.svg)
+
+</div>
+
+Note:
+ - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
+## _Where is the energy going?_
 
 ===
 
@@ -181,32 +251,13 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 
 ===
 
+
 <!-- .slide: data-state="standard" -->
 
-### Data centers
-
-<div style="width: 40%; float: right">
-
-* Compute and/or storage
-* Efficiency characterized by Power Usage Effectiveness (PUE)
-- PUE = P_{total_facility} / P_{IT_facility}
-
-* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
-
-</div>
-
-
-<div style="width: 60%; float: left; margin-top: 1%">
-
-![Data center PUE](media/PUE_DataCenter.svg)
-
-</div>
-
-Note:
- - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+## _What does this mean for carbon production?_
 
 ===
+
 
 <!-- .slide: data-state="standard" -->
 
@@ -260,30 +311,14 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" -->
-
-## Overall contribution of ICT
-
-- Computing carbon footprint can be split into two main contributions:
-  - *Embodied*: from raw material extraction, to distribution
-  - *Usage*: Powering, memory, infrastructure
-
-Note:
-
-===
 
 <!-- .slide: data-state="standard" -->
 
-## What is too much energy?
-- Do the potential benefits outweigh the environmental costs?
-- **We should think of energy (or CO2) the same way we think of money**
-  - What matters is the _cost-benefit_ ratio
-  - Is €1M a lot? Not if it leads to curing a major disease
-- Currently researchers are used to making the scientific case for the money they request
-- They should also be able to make the case for the corresponding carbon footprint
-- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
+## _What can we do about it?_
 
 Note:
+
+There are many tools and initiatives aimed at dealing with these issues
 
 ===
 
@@ -318,7 +353,6 @@ Note:
 
 ## The online calculator
 
-
 <div style="width: 60%; float: left; margin-top: 1%">
 
 <img src="media/green-algorithms-calculator-example.png" />
@@ -344,12 +378,37 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
+## _Will these things help?_
+
+Note:
+
+Some practical considerations to discuss
+
+===
+
+<!-- .slide: data-state="standard" -->
+
 ## Yet more paperwork?
 
 - Is this just more work for researchers when filling out grant applications?
 - All applications must estimate the environmental impact of their models.
 - They did this in France and researchers still applied. The Green Algorithms Calculator was required to be used for the applications. Researchers accepted it was a fair request and still continued applying.
 - If a project is cheap financially, but has a large carbon cost, there should be an explicit justification why
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### What is too much energy anyway?
+- Do the potential benefits outweigh the environmental costs?
+- **We should think of energy (or CO2) the same way we think of money**
+  - What matters is the _cost-benefit_ ratio
+  - Is €1M a lot? Not if it leads to curing a major disease
+- Currently researchers are used to making the scientific case for the money they request
+- They should also be able to make the case for the corresponding carbon footprint
+- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
 
 Note:
 
