@@ -12,6 +12,50 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
+## Typical values of energy
+
+| Energy (J) | Examples | Equ. gCO2 |
+| :-------- | -------: |--------:|
+| 1.0e0 | ??????????????????????????????????? | |
+| 1.0e1 | ??????????????????????????????????? | |
+| 1.0e2 | ??????????????????????????????????? | |
+| 1.0e3 (kJ) | ??????????????????????????????????? | |
+| 1.0e4 | ??????????????????????????????????? | |
+| 1.0e5 | ??????????????????????????????????? | |
+| 1.0e6 (MJ) | ??????????????????????????????????? | |
+| 3.6e6 (1 kWh)| ??????????????????????????????????? | 305 |
+| 1.0e7 | ??????????????????????????????????? | |
+| 1.0e8 | ??????????????????????????????????? | |
+| 1.0e9 (0.27 MWh) | ??????????????????????????????????? | | |
+
+Note:
+
+Do you have a feel for how much 1 Joule actually is?
+Press down arrow to see the examples for different orders of magnitude.
+
+==
+
+## Typical values of energy
+
+| Energy (J) | Examples | Equ. gCO2 |
+| :-------- | -------: |--------:|
+| 1.0e0 | Lift an apple to your mouth | |
+| 1.0e1 |  | |
+| 1.0e2 |  | |
+| 1.0e3 (kJ) | Standby LED (0.3W) for 1 hour | |
+| 1.0e4 | LED-based lightbulb (3W) for 1 hour | |
+| 1.0e5 | 15 mn bike ride | |
+| 1.0e6 (MJ) | ~ 2km drive | |
+| 3.6e6 (1 kWh)|  | 305 |
+| 1.0e7 | Human energy need per day | |
+| 1.0e8 | Averaged daily cons. of NL home | |
+| 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
 ### ICT under scrutiny?
 
 <div style="width: 40%; float: left; margin-top: 1%">
@@ -68,7 +112,7 @@ Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Pat
 
 <!-- .slide: data-state="standard" -->
 
-### Supercomputers are also getting more powerful
+### Supercomputers are also doing more
 
 ![TOP500 GFLOPS](media/top500_performance_evolution.svg)
 
@@ -86,14 +130,20 @@ Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
 
 <!-- .slide: data-state="standard" -->
 
-## CPU energy consumption: how does it relates to FLOPs ?
+### CPU energy consumption: how does it relate to FLOPs ?
 
 Increase in FLOPs mostly related to:
  - improved manufacturing, more transistor/surface (Moore's law)
  - low level instructions handling improvements
  - increase in CPU clock rate (until mid-2000)
 
-What does it means for energy ?
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### What does it mean for energy ?
  - More transistors lead to more power, however smaller transistors need less voltage 
  - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
  - Active power consumption of CPUs: ~ P_0 + C * V(f_c)^2 * f_c ~ f_c^3
@@ -107,14 +157,23 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Computer performances: FLOPs/Watt
+### Computer performances: FLOPs/Watt
 
-Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
-The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
-Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
+<div style="width: 40%; float: right">
+
+* Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
+* The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
+* Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
 Compared to Koomey's prediction: factor 2 improvement every 1.57 years.
 
+</div>
+
+
+<div style="width: 60%; float: left; margin-top: 1%">
+
 ![Green500 efficiency](media/green500_efficiency_evolution.svg)
+
+</div>
 
 Note:
 
@@ -124,16 +183,25 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 
 <!-- .slide: data-state="standard" -->
 
-## Data centers
-- compute and/or storage
-- efficiency characterized by their Power Usage Effectiveness (PUE):
-    PUE = P_{total_facility} / P_{IT_facility}
+### Data centers
 
-- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+<div style="width: 40%; float: right">
+
+* Compute and/or storage
+* Efficiency characterized by Power Usage Effectiveness (PUE)
+- PUE = P_{total_facility} / P_{IT_facility}
+
+* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+
+</div>
+
+
+<div style="width: 60%; float: left; margin-top: 1%">
 
 ![Data center PUE](media/PUE_DataCenter.svg)
 
+</div>
 
 Note:
  - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
@@ -152,6 +220,15 @@ Note:
 Note:
 
 So far, we've talked about energy -> a proxy for CO2 emission, using the energy carbon intensity
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+You can get an idea for real time carbon intensity in Europe here:
+
+
+[https://app.electricitymaps.com/map](https://app.electricitymaps.com/map)
 
 ===
 
@@ -192,49 +269,6 @@ Note:
   - *Usage*: Powering, memory, infrastructure
 
 Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Typical values of energy
-
-| Energy (J) | Examples | Equ. gCO2 |
-| :-------- | -------: |--------:|
-| 1.0e0 | ???? | |
-| 1.0e1 | ???? | |
-| 1.0e2 | ???? | |
-| 1.0e3 (kJ) | ???? | |
-| 1.0e4 | ???? | |
-| 1.0e5 | ???? | |
-| 1.0e6 (MJ) | ???? | |
-| 3.6e6 (1 kWh)| ???? | 305 |
-| 1.0e7 | ???? | |
-| 1.0e8 | ???? | |
-| 1.0e9 (0.27 MWh) | ???? | |
-
-Note:
-
-Do you have a feel for how much 1 Joule actually is?
-Press down arrow to see the examples for different orders of magnitude.
-
-==
-
-## Typical values of energy
-
-| Energy (J) | Examples | Equ. gCO2 |
-| :-------- | -------: |--------:|
-| 1.0e0 | Lift an apple to your mouth | |
-| 1.0e1 |  | |
-| 1.0e2 |  | |
-| 1.0e3 (kJ) | Standby LED (0.3W) for 1 hour | |
-| 1.0e4 | LED-based lightbulb (3W) for 1 hour | |
-| 1.0e5 | 15 mn bike ride | |
-| 1.0e6 (MJ) | ~ 2km drive | |
-| 3.6e6 (1 kWh)|  | 305 |
-| 1.0e7 | Human energy need per day | |
-| 1.0e8 | Averaged daily cons. of NL home | |
-| 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
 
 ===
 
@@ -284,11 +318,21 @@ Note:
 
 ## The online calculator
 
+
+<div style="width: 60%; float: left; margin-top: 1%">
+
 <img src="media/green-algorithms-calculator-example.png" />
+
+</div>
+
+
+<div style="width: 40%; float: right; margin-top: 1%">
 
 - The Green Algorithms online calculator makes it quick and easy to estimate the carbon footprint
 - Can be found here: <http://calculator.green-algorithms.org/>
 - There is also a Green Algorithms tool for HPC
+
+</div>
 
 Note:
 
