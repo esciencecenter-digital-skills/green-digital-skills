@@ -142,7 +142,10 @@ Note:
 ### A warning: Jevon's Paradox
 
 ```
-In economics, the Jevons paradox occurs when technological progress increases the efficiency with which a resource is used (reducing the amount necessary for any one use), but the falling cost of use induces increases in demand enough that resource use is increased, rather than reduced.
+In economics, the Jevons paradox occurs when technological progress increases
+the efficiency with which a resource is used (reducing the amount necessary for any one use),
+but the falling cost of use induces increases in demand enough that resource use is increased,
+rather than reduced.
 ```
 
 - [https://en.wikipedia.org/wiki/Jevons_paradox](https://en.wikipedia.org/wiki/Jevons_paradox)
