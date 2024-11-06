@@ -115,7 +115,7 @@ Note:
 
 * We recommend trying `CodeCarbon`
 - More in this afternoon's hands-on workshop
-* Also pyPMT, Rjoules, and many more 
+* Also PMT (Power Measurement Toolkit), Rjoules, and many more 
 
 Note:
 
