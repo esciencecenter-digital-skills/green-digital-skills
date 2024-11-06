@@ -13,7 +13,7 @@ order: 2
 <!-- .slide: data-state="standard" -->
 
 ### We will try to answer
--[]  _How much energy is a lot of energy?_
+- _How much energy is a lot of energy?_
 - _Does Information Computing Technology use a lot of energy?_
 - _Where is the energy going?_
 - _What does this mean for carbon production?_

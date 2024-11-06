@@ -12,12 +12,21 @@ order: 1
 
 <!-- .slide: data-state="standard" -->
 
+### What we will cover here
+- What software development choices can reduce energy wastage
+- How can we measure the actual energy usage of our code
+
+
+===
+
+<!-- .slide: data-state="standard" -->
+
 ### Good software practice
 
 Clean and maintainable software is essential
-to sustainable/green software:
- - ease of use, reduce error during data settings
- - less bugs, avoid wasteful bugged runs
+for sustainable/green software:
+ - Ease of use, reduce error during data settings
+ - Less bugs, avoid wasteful bugged runs
 
 Note:
 
@@ -55,13 +64,12 @@ Note:
 
 ### Use the right tool for each task
 
-* Should I avoid "slow" and inefficient programming languages?
- - Each has its purpose
- - Python: great for stitching pieces together, easy prototyping
- - C/C++/Fortran: better at crunching number fast, but not so good at doing string manipulation, ...
-
-* Language benchmarks available in the literature can be misleading
- - Python/R for can be fine, it's more about the libraries you are using
+- Should I avoid "slow" and inefficient programming languages?
+- Well, each has its purpose
+  - Python: great for stitching pieces together, easy prototyping
+  - C/C++/Fortran: better at crunching numbers fast
+- Language benchmarks available in the literature can be misleading here
+  - Python/R for can be fine, it's more about the libraries you are using
 
 Note:
 
@@ -95,12 +103,11 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### Energy usage
+### Time to solution
 
-* Energy is Power * time
+- Energy is Power * time
 - As a first approximation, more efficient (faster) software will be energy efficient
-
-* It is possible to run on many CPUs although there is overhead from the parallelism.
+  - It is possible to run on many CPUs although there is overhead from the parallelism.
 
 Note:
 
@@ -108,9 +115,9 @@ Note:
 
 ### Profile your code
 
-* We recommend trying `CodeCarbon`
-- More in this afternoon's hands-on workshop
-* Also PMT (Power Measurement Toolkit), Rjoules, and many more 
+- We recommend trying `CodeCarbon`
+  - More in this afternoon's hands-on workshop
+- Also PMT (Power Measurement Toolkit), Rjoules, and many more 
 
 Note:
 
@@ -120,13 +127,13 @@ Note:
 
 ### What if I can't/won't change the code?
 
-* Perhaps you can profile the code but you cannot do much with the results
-- e.g. You are not the developer, or don't feel experienced enough
-* There are tools such as the Energy Aware Runtime
-- Dynamically scales the CPU or GPU clock frequency up or down while the code is running
-- When code is waiting a lot (for I/O or memory), frequency is scaled down
-- Remember that Power ~ frequency^2
-- Also covered in this afternoon's hands-on workshop (HPC-track)
+- Perhaps you can profile the code but you cannot do much with the results
+  - e.g. You are not the developer, or don't feel experienced enough
+- There are tools such as the Energy Aware Runtime
+  - Dynamically scales the CPU or GPU clock frequency up or down while the code is running
+  - When code is waiting a lot (for I/O or memory), frequency is scaled down
+  - Remember that Power ~ frequency^2
+  - Also covered in this afternoon's hands-on workshop (HPC-track)
 
 Note:
 
