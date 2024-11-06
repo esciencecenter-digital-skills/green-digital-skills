@@ -53,20 +53,15 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### Right tool for each task
+### Use the right tool for each task
 
-Are there slow programming languages that should be
-avoided ?
- - each tool has its purpose.
-Python: great for stitching pieces together, easy prototyping
-C/C++/Fortran: better at crunching number fast, but not
-so good at doing string manipulation, ...
+* Should I avoid "slow" and inefficient programming languages?
+ - Each has its purpose
+ - Python: great for stitching pieces together, easy prototyping
+ - C/C++/Fortran: better at crunching number fast, but not so good at doing string manipulation, ...
 
-Benchmarks available in the literature can be missleading.
-
--> Use the right tool for each task (could simply be the 
-tool you're confortable with), blending languages
-when necessary.
+* Language benchmarks available in the literature can be misleading
+ - Python/R for can be fine, it's more about the libraries you are using
 
 Note:
 
