@@ -91,7 +91,7 @@ be obtained [here](media/EuclidianDistance.py).
 Let's now write a small Python driver to execute the computation
 and measure the energy consumption.
 
-We will start by importing the Python module needed. In a new
+We will start by importing the Python modules needed. In a new
 python file (e.g. EDCodeCarbonTest.py), write the following:
 ```
 import random
@@ -180,17 +180,17 @@ but it will resemble the following (here on MacOS):
 ```
 At time interval specified when initializing the ```OfflineEmissionsTracker```, power and energy
 are reported for the various hardware. Based on the country code provided, an estimate of
-the CO2eq emission rate is also reported at the end. As you can see, a constant 9W power is used for the RAM, whereas
+the CO2eq emission rate is also reported at the end. As you can see, a constant 9W power is used for the RAM here, whereas
 small fluctuations are observed on the CPU side. Even though the RAM and CPU are shared with other programs running
 on your computer, CodeCarbon assign their full usage to the measured code. A more accurate measurement of the specific
 process CPU usage can be obtained by providing an extra argument to the tracker initialization, ```tracking_mode = "process"```.
-However, this method is not reliable enough to measure memory power.
+However, this method does not provide a good measurement of the memory power.
 
 Let's now switch to the Numpy version of program by updating the call to the ```get_distances``` function:
 ```
         get_distances(points, "numpy")
 ```
-And re-run the program. The measured energy consumption is now 0.000194 kWh, for an estimated
+And re-run the program. The measured energy consumption for thid case is 0.000194 kWh, for an estimated
 emission rate of 0.000538 g.CO2eq/s.
 This small example demonstrate how by relying on a more efficient implementation, the energy consumption and associated
 emissions can be reduced, mostly due to a shorter runtime. Feel free to experiment changing problem size, update the
@@ -221,4 +221,13 @@ if __name__ == "__main__":
         subprocess.call (["/usr/bin/Rscript", "--vanilla", "/pathto/MyrScript.r"])
 ```
 Note that because the script R script is executed in an external process, the option ```tracking_mode = "process"```
-is no longer relevant.
+is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant.
+
+## Conclusion
+-------------
+
+In this short tutorial, you have tested first-hand how to measure the energy consumption of a piece of code
+using [CodeCarbon](https://codecarbon.io/). CodeCarbon can be deployed on larger application as well as
+on HPC platforms.
+Although written in Python, CodeCarbon can be used for any other languages as long as you are able to use
+Python subprocess to execute the external program (i.e. R, C++, Fortran, ...).
