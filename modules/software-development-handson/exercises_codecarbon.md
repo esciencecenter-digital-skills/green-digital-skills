@@ -93,7 +93,7 @@ and measure the energy consumption.
 
 We will start by importing the Python modules needed. In a new
 python file (e.g. EDCodeCarbonTest.py), write the following:
-```
+```python [EDCodeCarbonTest.py]{4-6,7} meta-info=val
 import random
 import numpy as np
 from EuclidianDistance import get_distances
@@ -145,8 +145,10 @@ Let's now add our actual computation in the code as follows:
         get_distances(points, "base")
 ```
 where we use the base implementation of the Euclidean distance calculation. It is now
-time to run the program. On MacOS, CodeCarbon relies on PowerMetrics to access hardware
-power data, thus requiring root/sudo access. You will be prompted for your login password.
+time to run the program.
+
+> `Note`{style="color: darkred;"}: On MacOS, CodeCarbon relies on PowerMetrics to access hardware power data, thus requiring root/sudo access. You will be prompted for your login password
+
 
 The actual output of running the Python program will depend on your platform and hardware,
 but it will resemble the following (here on MacOS):
@@ -178,6 +180,9 @@ but it will resemble the following (here on MacOS):
 [...] 0.000321 kWh of electricity used since the beginning.
 [...] 0.000890 g.CO2eq/s mean an estimation of 28.064960638276645 kg.CO2eq/year
 ```
+
+> `Note`{style="color: darkred;"}: If the CPU on your system is not recognized by CodeCarbon, a default CPU will be used but the code will issue Warnings.
+
 At time interval specified when initializing the ```OfflineEmissionsTracker```, power and energy
 are reported for the various hardware. Based on the country code provided, an estimate of
 the CO2eq emission rate is also reported at the end. As you can see, a constant 9W power is used for the RAM here, whereas
@@ -193,9 +198,11 @@ Let's now switch to the Numpy version of program by updating the call to the ```
 And re-run the program. The measured energy consumption for thid case is 0.000194 kWh, for an estimated
 emission rate of 0.000538 g.CO2eq/s.
 This small example demonstrate how by relying on a more efficient implementation, the energy consumption and associated
-emissions can be reduced, mostly due to a shorter runtime. Feel free to experiment changing problem size, update the
-parameters of the ```OfflineEmissionsTracker``` or try alternative implementation of the distance computation. You can
-also add timers to the script to estimate if the average power is changing between the two provided implementation.
+emissions can be reduced, mostly due to a shorter runtime. Feel free to experiment with the following:
+ - changing problem size
+ - update the parameters of the ```OfflineEmissionsTracker```, changing the country code for instance
+ - try an alternative implementation of the distance computation
+ - add timers to the script to estimate if the average power, is it changing between the two provided implementation ?
 
 ## Using CodeCarbon: your own code
 ----------------------------------
