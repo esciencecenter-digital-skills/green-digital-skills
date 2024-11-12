@@ -176,17 +176,17 @@ https://github.com/UCL-CCS/HemePure-GPU
 We will be running through an example of pressure driven flow through a bifurcation available in the HemeLB download.
 
 CPU example jobscript
-[hemepure_cpu_job.sh](scripts/hemepure_cpu_job.sh)
+[hemepure_cpu_job.sh](scripts/HemePure_CPU_job.sh)
 
 GPU example jobscript
-[hemepure_gpu_job.sh](scripts/hemepure_gpu_job.sh)
+[hemepure_gpu_job.sh](scripts/HemePure_GPU_job.sh)
 
 ### Palabos
 
 > The Palabos (Parallel Lattice Boltzmann Solver) library is a framework for general-purpose computational fluid dynamics (CFD), with a kernel based on the lattice Boltzmann method. The case we use in this course is a simulation of blood flow in a inside the 3D aneurysm geometry. https://palabos.unige.ch/
 
 example jobscript
-[palabos_job.sh](scripts/palabos_job.sh)
+[palabos_job.sh](scripts/Palabos_job.sh)
 
 
 ### GROMACS
