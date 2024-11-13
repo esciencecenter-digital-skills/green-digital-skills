@@ -13,11 +13,41 @@ order: 1
 <!-- .slide: data-state="standard" -->
 
 ### What we will cover here
+- Does optimizing the software matter?
 - What software development choices can reduce energy wastage
 - How can we measure the actual energy usage of our code
 
+===
+
+<!-- .slide: data-state="standard" -->
+
+## _Does optimizing the software matter?_
 
 ===
+
+<!-- .slide: data-state="standard" -->
+
+<div style="width: 40%; float: left; margin-top: 1%">
+
+* Most CO2 comes from the usage of data centers not the building of them
+* Reducing your energy while running software indeed matters.
+
+</div>
+
+<div style="width: 60%; float: right">
+
+![Higher CO2 emissions from the use phase across ICT infrastructure](media/higher-co2-emissions-from-use-phase-across-ict-infrastructure.png)
+
+</div>
+
+
+
+Note:
+
+Here is something that adds to the story of “optimization of energy”: This CO2 footprint of use phase vs production phase shows that most of the CO2 comes from the usage of data centers not the building of them. So reducing your energy while running software indeed matters.
+
+===
+
 
 <!-- .slide: data-state="standard" -->
 
@@ -155,7 +185,7 @@ rather than reduced.
 * Are you thinking about this the right way?
 * Is green computing really a purely technical issue?
 * Is your footprint by computing really your biggest contribution to the climate crisis?
-* What are other low hanging fruits you can tackle?
+* Organizational policy is as important if not more important
 
 Note:
 In practice, reducing energy use overall is more about organizational policy and value judgements about what the expected return is for a given amount of energy used.
