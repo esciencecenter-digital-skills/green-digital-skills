@@ -11,7 +11,6 @@ order: 2
 ===
 
 <!-- .slide: data-state="standard" -->
-
 ### We will try to answer
 - _How much energy is a lot of energy?_
 - _Does Information Computing Technology use a lot of energy?_
@@ -22,9 +21,9 @@ order: 2
 
 ===
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _How much energy is a lot of energy?_
+### _How much energy is a lot of energy?_
 
 ===
 
@@ -71,15 +70,15 @@ Press down arrow to see the examples for different orders of magnitude.
 
 ===
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _Does Information Computing Technology use a lot of energy?_
+### _Does Information Computing Technology use a lot of energy?_
 
 ===
 
 <!-- .slide: data-state="standard" -->
 
-### ICT under scrutiny
+### ICT uses a lot of energy
 
 <div style="width: 40%; float: left; margin-top: 1%">
 
@@ -108,7 +107,7 @@ Our day2day work embedded in ICT.
 
 <!-- .slide: data-state="standard" -->
 
-## Overall contribution of ICT
+### Overall contribution of ICT
 
 - Computing carbon footprint can be split into two main contributions:
   - *Embodied*: from raw material extraction, to distribution
@@ -147,9 +146,9 @@ Note:
 ===
 
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _Where is the energy going?_
+### _Where is the energy going?_
 
 ===
 
@@ -257,9 +256,9 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 ===
 
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _What does this mean for carbon production?_
+### _What does this mean for carbon production?_
 
 ===
 
@@ -317,9 +316,9 @@ Note:
 ===
 
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _What can we do about it?_
+### _What can we do about it?_
 
 Note:
 
@@ -329,26 +328,10 @@ There are many tools and initiatives aimed at dealing with these issues
 
 <!-- .slide: data-state="standard" -->
 
-## Estimating impact
-- Loïc Lannelongue started a project called Green Algorithms: 
-- Made a calculator to estimate energy cost and carbon footprint of your algorithm
-- Necessary for assessing how to make computing more environmentally sustainable
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## The GREENER framework
-- A set of principles for green computing analogous to the FAIR principles for data
-- GREENER:
-  - **G**overnance
-  - **R**esponsibility
-  - **E**stimations: Use calculators to estimate impact of the computing
-  - **N**ew collaboration
-  - **E**ducation: Need to include the notion that it has a carbon footprint during training of new researchers
-  - **R**esearch: Still don't know a lot about computing power usage
+### Estimating impact
+- A researcher at Cambridge, Loïc Lannelongue, started a project called Green Algorithms: 
+  - Made a calculator to estimate energy cost and carbon footprint of your algorithm
+  - Necessary for assessing how to make computing more environmentally sustainable
 
 Note:
 
@@ -381,9 +364,39 @@ Note:
 
 ===
 
+
 <!-- .slide: data-state="standard" -->
 
-## _Will these things help?_
+### The Green DiSC
+
+<center>
+
+<img src="media/greendisc.png" width=40% />
+
+</center>
+
+* Also managed by Loïc Lannelongue (Green Algorithms)
+* Three levels of certification: Bronze, Silver and Gold 
+* Focusses on computing (other schemes cover heating, travel etc.)
+* Computing includes:
+  * HPC infrastructure
+  * Data storage and hardware policy
+  * Eventually sustainability as part of teaching
+
+
+
+Note:
+
+Managed by the same person as worked on the Green Algorithms calculator.
+
+Read in more detail here: <https://www.software.ac.uk/GreenDiSC>
+
+===
+
+
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
+
+### _Will these things help?_
 
 Note:
 
