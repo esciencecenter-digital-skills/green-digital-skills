@@ -377,6 +377,8 @@ Green Algorithms one online calculator isn’t very practical in an HPC setting,
 
 Very early days, but very lightweight. Currently works with systems using SLURM but in principle is adaptable to other schedulers/workflow systems.
 
+See <https://www.green-algorithms.org/GA4HPC/> for more.
+
 ===
 
 <!-- .slide: data-state="standard" -->
