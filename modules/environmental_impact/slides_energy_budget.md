@@ -12,13 +12,88 @@ order: 2
 
 <!-- .slide: data-state="standard" -->
 
-## Why is information and communication technology (ICT) under scrutiny ?
+### We will try to answer
+- _How much energy is a lot of energy?_
+- _Does Information Computing Technology use a lot of energy?_
+- _Where is the energy going?_
+- _What does this mean for carbon production?_
+- _What can we do about it?_
+- _Will these things help?_
 
-Predicted major increase in electricity demand: from 8% to 21% in 2030.
+===
 
-Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+<!-- .slide: data-state="standard" -->
 
-![Energy consumption ICT](media/ICT_EnergyConsumption_Jones_2018.png)
+## _How much energy is a lot of energy?_
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Typical values of energy
+
+| Energy (J) | Examples | Equ. gCO2 |
+| :-------- | -------: |--------:|
+| 1.0e0 | ??????????????????????????????????? | |
+| 1.0e1 | ??????????????????????????????????? | |
+| 1.0e2 | ??????????????????????????????????? | |
+| 1.0e3 (kJ) | ??????????????????????????????????? | |
+| 1.0e4 | ??????????????????????????????????? | |
+| 1.0e5 | ??????????????????????????????????? | |
+| 1.0e6 (MJ) | ??????????????????????????????????? | |
+| 3.6e6 (1 kWh)| ??????????????????????????????????? | 305 |
+| 1.0e7 | ??????????????????????????????????? | |
+| 1.0e8 | ??????????????????????????????????? | |
+| 1.0e9 (0.27 MWh) | ??????????????????????????????????? | | |
+
+Note:
+
+Do you have a feel for how much 1 Joule actually is?
+Press down arrow to see the examples for different orders of magnitude.
+
+==
+
+## Typical values of energy
+
+| Energy (J) | Examples | Equ. gCO2 |
+| :-------- | -------: |--------:|
+| 1.0e0 | Lift an apple to your mouth | |
+| 1.0e1 |  | |
+| 1.0e2 |  | |
+| 1.0e3 (kJ) | Standby LED (0.3W) for 1 hour | |
+| 1.0e4 | LED-based lightbulb (3W) for 1 hour | |
+| 1.0e5 | 15 mn bike ride | |
+| 1.0e6 (MJ) | ~ 2km drive | |
+| 3.6e6 (1 kWh)|  | 305 |
+| 1.0e7 | Human energy need per day | |
+| 1.0e8 | Averaged daily cons. of NL home | |
+| 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## _Does Information Computing Technology use a lot of energy?_
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### ICT under scrutiny
+
+<div style="width: 40%; float: left; margin-top: 1%">
+
+* Information Computing Technology (ICT) 
+* Predicted major increase in electricity demand:
+- from 8% to 21% in 2030.
+
+* Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+
+</div>
+
+<div style="width: 60%; float: right">
+<img src="media/ICT_EnergyConsumption_Jones_2018.png" width="100%")
+</div>
 
 Note:
 
@@ -33,17 +108,73 @@ Our day2day work embedded in ICT.
 
 <!-- .slide: data-state="standard" -->
 
-## Where is energy used in ICT ?
+## Overall contribution of ICT
 
-All ICT devices are powered by electricity.
-In particular electrons themselves are used to perform the
-operations encoded in your softwares.
-Over the past 40 years, the number of operations processors
-can crunch per seconds (FLOPs) continuously increased, albeit at a smaller rate past 2003.
+- Computing carbon footprint can be split into two main contributions:
+  - *Embodied*: from raw material extraction, to distribution
+  - *Usage*: Powering, memory, infrastructure
+
+Note:
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
+### Data centers
+
+<div style="width: 40%; float: right">
+
+* Compute and/or storage
+* Efficiency characterized by Power Usage Effectiveness (PUE)
+- PUE = P_{total_facility} / P_{IT_facility}
+
+* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+
+</div>
+
+
+<div style="width: 60%; float: left; margin-top: 1%">
+
+![Data center PUE](media/PUE_DataCenter.svg)
+
+</div>
+
+Note:
+ - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
+## _Where is the energy going?_
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### What is using the energy?
+
+<div style="width: 40%; float: left; margin-top: 1%">
+
+* Devices are powered by electricity.
+* Electrons themselves are used to perform the operations encoded in your softwares.
+* Number of operations processors can crunch per second has continuously increased.
+
+</div>
+
+<div style="width: 60%; float: right">
 
 ![Consumer CPU performances](media/CPUFlops_overTime.png)
 
+</div>
+
 Note:
+
+Over the past 40 years, the number of operations processors
+can crunch per second has continuously increased
 
 Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Patterson D. A., Computer Architecture (5th edition)) 
 
@@ -51,17 +182,17 @@ Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Pat
 
 <!-- .slide: data-state="standard" -->
 
-## Where is energy used in ICT (Con't) ?
+### Supercomputers are also doing more
+
+![TOP500 GFLOPS](media/top500_performance_evolution.svg)
+
+Note:
 
 This trend extends to supercomputers (e.g. Snellius) and data centers. Top500 records performances
 of the world's (500) biggest computers on the same problem for over 30 years:
 
-![TOP500 GFLOPS](media/top500_performance_evolution.svg)
-
-Initaly growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
+Initially growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
 kept the curve on track with Moore's law even though transitor/surface is increasing slower than Moore's law.
-
-Note:
 
 Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
 
@@ -69,14 +200,20 @@ Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
 
 <!-- .slide: data-state="standard" -->
 
-## CPU energy consumption: how does it relates to FLOPs ?
+### CPU energy consumption: how does it relate to FLOPs ?
 
 Increase in FLOPs mostly related to:
  - improved manufacturing, more transistor/surface (Moore's law)
  - low level instructions handling improvements
  - increase in CPU clock rate (until mid-2000)
 
-What does it means for energy ?
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### What does it mean for energy ?
  - More transistors lead to more power, however smaller transistors need less voltage 
  - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
  - Active power consumption of CPUs: ~ P_0 + C * V(f_c)^2 * f_c ~ f_c^3
@@ -90,14 +227,23 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-## Computer performances: FLOPs/Watt
+### Computer performances: FLOPs/Watt
 
-Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
-The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
-Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
+<div style="width: 40%; float: right">
+
+* Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
+* The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
+* Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
 Compared to Koomey's prediction: factor 2 improvement every 1.57 years.
 
+</div>
+
+
+<div style="width: 60%; float: left; margin-top: 1%">
+
 ![Green500 efficiency](media/green500_efficiency_evolution.svg)
+
+</div>
 
 Note:
 
@@ -105,23 +251,13 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 
 ===
 
+
 <!-- .slide: data-state="standard" -->
 
-## Data centers
-- compute and/or storage
-- efficiency characterized by their Power Usage Effectiveness (PUE):
-    PUE = P_{total_facility} / P_{IT_facility}
-
-- Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-- Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
-
-![Data center PUE](media/PUE_DataCenter.svg)
-
-
-Note:
- - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+## _What does this mean for carbon production?_
 
 ===
+
 
 <!-- .slide: data-state="standard" -->
 
@@ -135,6 +271,15 @@ Note:
 Note:
 
 So far, we've talked about energy -> a proxy for CO2 emission, using the energy carbon intensity
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+You can get an idea for real time carbon intensity in Europe here:
+
+
+[https://app.electricitymaps.com/map](https://app.electricitymaps.com/map)
 
 ===
 
@@ -166,73 +311,14 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" -->
-
-## Overall contribution of ICT
-
-- Computing carbon footprint can be split into two main contributions:
-  - *Embodied*: from raw material extraction, to distribution
-  - *Usage*: Powering, memory, infrastructure
-
-Note:
-
-===
 
 <!-- .slide: data-state="standard" -->
 
-## Typical values of energy
-
-| Energy (J) | Examples | Equ. gCO2 |
-| :-------- | -------: |--------:|
-| 1.0e0 | ???? | |
-| 1.0e1 | ???? | |
-| 1.0e2 | ???? | |
-| 1.0e3 (kJ) | ???? | |
-| 1.0e4 | ???? | |
-| 1.0e5 | ???? | |
-| 1.0e6 (MJ) | ???? | |
-| 3.6e6 (1 kWh)| ???? | 305 |
-| 1.0e7 | ???? | |
-| 1.0e8 | ???? | |
-| 1.0e9 (0.27 MWh) | ???? | |
+## _What can we do about it?_
 
 Note:
 
-Do you have a feel for how much 1 Joule actually is?
-Press down arrow to see the examples for different orders of magnitude.
-
-==
-
-## Typical values of energy
-
-| Energy (J) | Examples | Equ. gCO2 |
-| :-------- | -------: |--------:|
-| 1.0e0 | Lift an apple to your mouth | |
-| 1.0e1 |  | |
-| 1.0e2 |  | |
-| 1.0e3 (kJ) | Standby LED (0.3W) for 1 hour | |
-| 1.0e4 | LED-based lightbulb (3W) for 1 hour | |
-| 1.0e5 | 15 mn bike ride | |
-| 1.0e6 (MJ) | ~ 2km drive | |
-| 3.6e6 (1 kWh)|  | 305 |
-| 1.0e7 | Human energy need per day | |
-| 1.0e8 | Averaged daily cons. of NL home | |
-| 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## What is too much energy?
-- Do the potential benefits outweigh the environmental costs?
-- **We should think of energy (or CO2) the same way we think of money**
-  - What matters is the _cost-benefit_ ratio
-  - Is €1M a lot? Not if it leads to curing a major disease
-- Currently researchers are used to making the scientific case for the money they request
-- They should also be able to make the case for the corresponding carbon footprint
-- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
-
-Note:
+There are many tools and initiatives aimed at dealing with these issues
 
 ===
 
@@ -267,11 +353,20 @@ Note:
 
 ## The online calculator
 
+<div style="width: 60%; float: left; margin-top: 1%">
+
 <img src="media/green-algorithms-calculator-example.png" />
+
+</div>
+
+
+<div style="width: 40%; float: right; margin-top: 1%">
 
 - The Green Algorithms online calculator makes it quick and easy to estimate the carbon footprint
 - Can be found here: <http://calculator.green-algorithms.org/>
 - There is also a Green Algorithms tool for HPC
+
+</div>
 
 Note:
 
@@ -283,12 +378,37 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
+## _Will these things help?_
+
+Note:
+
+Some practical considerations to discuss
+
+===
+
+<!-- .slide: data-state="standard" -->
+
 ## Yet more paperwork?
 
 - Is this just more work for researchers when filling out grant applications?
 - All applications must estimate the environmental impact of their models.
 - They did this in France and researchers still applied. The Green Algorithms Calculator was required to be used for the applications. Researchers accepted it was a fair request and still continued applying.
 - If a project is cheap financially, but has a large carbon cost, there should be an explicit justification why
+
+Note:
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### What is too much energy anyway?
+- Do the potential benefits outweigh the environmental costs?
+- **We should think of energy (or CO2) the same way we think of money**
+  - What matters is the _cost-benefit_ ratio
+  - Is €1M a lot? Not if it leads to curing a major disease
+- Currently researchers are used to making the scientific case for the money they request
+- They should also be able to make the case for the corresponding carbon footprint
+- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
 
 Note:
 

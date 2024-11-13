@@ -1,7 +1,7 @@
 ---
 title: Reading material
 type: reading
-order: 3
+order: 6
 ---
 
 # Reading material

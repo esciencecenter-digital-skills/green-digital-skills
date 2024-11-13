@@ -5,6 +5,6 @@
     "repoName": "green-digital-skills",
     "repoOwner": "esciencecenter-digital-skills",
     "organization": "Netherlands eScience Center",
-    "categoryOrder": ["Lecture", "Workshop"]
+    "categoryOrder": ["Introduction", "Lecture", "Workshop"]
   }
 }
