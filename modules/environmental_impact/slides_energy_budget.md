@@ -364,6 +364,20 @@ Note:
 
 ===
 
+### Green Algorithms 4 HPC
+
+<center>
+<img src="media/GA4HPC.png" width="60%" />
+<small> <https://github.com/GreenAlgorithms/GreenAlgorithms4HPC> </small>
+</center>
+
+Note:
+
+Green Algorithms one online calculator isn’t very practical in an HPC setting, where very many jobs are run. This tool uses the logged info about the jobs which ran on the system and estimates corresponding energy usage and carbon footprint.
+
+Very early days, but very lightweight. Currently works with systems using SLURM but in principle is adaptable to other schedulers/workflow systems.
+
+===
 
 <!-- .slide: data-state="standard" -->
 
@@ -382,8 +396,6 @@ Note:
   * HPC infrastructure
   * Data storage and hardware policy
   * Eventually sustainability as part of teaching
-
-
 
 Note:
 
