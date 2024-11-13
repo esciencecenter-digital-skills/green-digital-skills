@@ -127,7 +127,7 @@ Note:
 
 * Compute and/or storage
 * Efficiency characterized by Power Usage Effectiveness (PUE)
-- PUE = P_{total_facility} / P_{IT_facility}
+- `$$ PUE = P_{total\_facility} / P_{IT\_facility} $$`
 
 * Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
 * Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
@@ -214,14 +214,19 @@ Note:
 <!-- .slide: data-state="standard" -->
 
 ### What does it mean for energy ?
- - More transistors lead to more power, however smaller transistors need less voltage 
+ - More transistors lead to more power, but smaller transistors need less voltage 
  - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
- - Active power consumption of CPUs: ~ P_0 + C * V(f_c)^2 * f_c ~ f_c^3
-    f_c: clock rate
-    V: voltage, higher voltage needed with higher clockrate to transfer information faster
- - Energy: power * time, time needed 1/f_c (fixed number of operations) -> energy ~ f_c^2
+ - Active power consumption of CPUs: `$$ \sim P_0 + C * V(f)^2 * f \sim f^3 $$`
+    - f: clock rate
+    - V: voltage, higher voltage needed with higher clockrate to transfer information faster
+ - Energy: power * time, time needed 1/f (fixed number of operations) ->
+    `$$ E \sim f^2 $$`
     
 Note:
+
+This may seem like a lot of detail.
+What really matters here is understanding that the energy usage of the CPU is influenced by the clock rate (frequency).
+Increases in clock rate cause a disproportionate increase in energy usage (since f is squared)
 
 ===
 
