@@ -199,15 +199,22 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### Minimizing energy use
-- Ultimately depends on the resources you use
-- Number of CPU cores is clearly a large contributor
-- Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
-- Think about WHEN we run a job on a server. Energy mix different at different times.
-- Can use tools such as the Carbon Aware Task Scheduler - tells you what is the best time to run in the next 48 hours.
-- Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
+### Minimizing energy (and carbon)
+
+<img src="media/carbon-aware-software.png" width="40%">
+
+- Think about _when_ we run a job on a server. Energy mix different at different times
+- Interesting new tools such as Carbon Aware Task Scheduler (UK-only currently)
+  - Tells you what is the best time to run in the next 48 hours
+- Think about what resources you request
+  - Number of CPU cores is clearly a large contributor
+  - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
 
 Note:
+Carbon awareness image is from <https://github.com/Green-Software-Foundation/carbon-aware-sdk>.
+
+Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
+
 
 ===
 
