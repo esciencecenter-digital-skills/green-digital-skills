@@ -1,30 +1,26 @@
 ---
-title: Energy Budget
+title: Energy
 type: slides
 order: 2
 ---
 
 <!-- .slide: data-state="title" -->
 
-# Energy Budget
+# Energy in Computing
 
 ===
 
 <!-- .slide: data-state="standard" -->
-
 ### We will try to answer
 - _How much energy is a lot of energy?_
 - _Does Information Computing Technology use a lot of energy?_
 - _Where is the energy going?_
-- _What does this mean for carbon production?_
-- _What can we do about it?_
-- _Will these things help?_
 
 ===
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _How much energy is a lot of energy?_
+### _How much energy is a lot of energy?_
 
 ===
 
@@ -71,15 +67,15 @@ Press down arrow to see the examples for different orders of magnitude.
 
 ===
 
-<!-- .slide: data-state="standard" -->
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
-## _Does Information Computing Technology use a lot of energy?_
+### _Does Information Computing Technology use a lot of energy?_
 
 ===
 
 <!-- .slide: data-state="standard" -->
 
-### ICT under scrutiny
+### ICT uses a lot of energy
 
 <div style="width: 40%; float: left; margin-top: 1%">
 
@@ -108,7 +104,7 @@ Our day2day work embedded in ICT.
 
 <!-- .slide: data-state="standard" -->
 
-## Overall contribution of ICT
+### Overall contribution of ICT
 
 - Computing carbon footprint can be split into two main contributions:
   - *Embodied*: from raw material extraction, to distribution
@@ -118,38 +114,61 @@ Note:
 
 ===
 
-
 <!-- .slide: data-state="standard" -->
 
-### Data centers
+### _Does optimizing matter?_
 
-<div style="width: 40%; float: right">
+<div style="width: 40%; float: left; margin-top: 1%">
 
-* Compute and/or storage
-* Efficiency characterized by Power Usage Effectiveness (PUE)
-- PUE = P_{total_facility} / P_{IT_facility}
-
-* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
-* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+* Most CO2 comes from the usage of data centers not the building of them
+* Reducing your energy while running software indeed matters.
 
 </div>
 
+<div style="width: 60%; float: right">
 
-<div style="width: 60%; float: left; margin-top: 1%">
-
-![Data center PUE](media/PUE_DataCenter.svg)
+![Higher CO2 emissions from the use phase across ICT infrastructure](media/higher-co2-emissions-from-use-phase-across-ict-infrastructure.png)
 
 </div>
+
 
 Note:
- - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+
+Here is something that adds to the story of “optimization of energy”: This CO2 footprint of use phase vs production phase shows that most of the CO2 comes from the usage of data centers not the building of them. So reducing your energy while running software indeed matters.
 
 ===
 
 
 <!-- .slide: data-state="standard" -->
 
-## _Where is the energy going?_
+### Data centers
+
+<div style="width: 45%; float: right;">
+
+* Compute and/or storage
+* Efficiency characterized by Power Usage Effectiveness (PUE)
+ `$$ PUE = P_{total} / P_{IT} $$`
+* Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
+* Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
+
+</div>
+
+
+<div style="width: 55%; float: left; margin-top: 1%">
+
+![Data center PUE](media/PUE_DataCenter.svg)
+
+</div>
+
+Note:
+ - $P_{IT}$ in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+
+===
+
+
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
+
+### _Where is the energy going?_
 
 ===
 
@@ -214,14 +233,19 @@ Note:
 <!-- .slide: data-state="standard" -->
 
 ### What does it mean for energy ?
- - More transistors lead to more power, however smaller transistors need less voltage 
- - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
- - Active power consumption of CPUs: ~ P_0 + C * V(f_c)^2 * f_c ~ f_c^3
-    f_c: clock rate
-    V: voltage, higher voltage needed with higher clockrate to transfer information faster
- - Energy: power * time, time needed 1/f_c (fixed number of operations) -> energy ~ f_c^2
+ - More transistors lead to more power, but smaller transistors need less voltage 
+ - CPU have a baseline (idle) power consumption ($P_0$), due to current leakage, unless closing circuit totally
+ - Active power consumption of CPUs: `$$ \sim P_0 + C * V(f)^2 * f \sim f^3 $$`
+    - $f$: clock rate
+    - $V$: voltage, higher voltage needed with higher clockrate to transfer information faster
+ - Energy: power * time, time needed $1/f$ (fixed number of operations) ->
+    `$$ E \sim f^2 $$`
     
 Note:
+
+This may seem like a lot of detail.
+What really matters here is understanding that the energy usage of the CPU is influenced by the clock rate (frequency).
+Increases in clock rate cause a disproportionate increase in energy usage (since f is squared)
 
 ===
 
@@ -232,7 +256,7 @@ Note:
 <div style="width: 40%; float: right">
 
 * Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
-* The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
+* The 10$^8$ increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
 * Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
 Compared to Koomey's prediction: factor 2 improvement every 1.57 years.
 
@@ -251,166 +275,14 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 
 ===
 
-
 <!-- .slide: data-state="standard" -->
 
-## _What does this mean for carbon production?_
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-## Energy Carbon intensity
-- Carbon intensity has a large spatial and temporal variability.
-- Extreme differences between countries
-- Countries with very low carbon intensity (e.g. Norway): 20g per kWh
-- Countries with high carbon intensity (e.g. Australia): 700g per kWh
-- You can make a big difference by running the exact same thing on the same hardware, but in a different country
-
-Note:
-
-So far, we've talked about energy -> a proxy for CO2 emission, using the energy carbon intensity
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-You can get an idea for real time carbon intensity in Europe here:
-
-
-[https://app.electricitymaps.com/map](https://app.electricitymaps.com/map)
-
-===
-
-<!-- .slide: data-state="empty-slide" data-background-iframe="https://app.electricitymaps.com/map" -->
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-# Typical footprint
-- Carbon footprint of data centres anually is around 100 MT of CO2 equivalent
-  - That is the same as the entire US aviation in the same time.
-  - Not all these data centres are doing HPC
-- About 500 Tonnes of CO2 estimated for training GPT3
-  - IPC says we should aim for 2 tonnes of CO2 per person per year to keep global warming in check. 
-  - Not every model has such huge impacts, but we need to be mindful
-
-Note:
-
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-# Dutch specific energy mix
-
-[Nowtricity](https://www.nowtricity.com/country/netherlands)
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-## _What can we do about it?_
-
-Note:
-
-There are many tools and initiatives aimed at dealing with these issues
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Estimating impact
-- Loïc Lannelongue started a project called Green Algorithms: 
-- Made a calculator to estimate energy cost and carbon footprint of your algorithm
-- Necessary for assessing how to make computing more environmentally sustainable
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## The GREENER framework
-- A set of principles for green computing analogous to the FAIR principles for data
-- GREENER:
-  - **G**overnance
-  - **R**esponsibility
-  - **E**stimations: Use calculators to estimate impact of the computing
-  - **N**ew collaboration
-  - **E**ducation: Need to include the notion that it has a carbon footprint during training of new researchers
-  - **R**esearch: Still don't know a lot about computing power usage
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## The online calculator
-
-<div style="width: 60%; float: left; margin-top: 1%">
-
-<img src="media/green-algorithms-calculator-example.png" />
-
-</div>
-
-
-<div style="width: 40%; float: right; margin-top: 1%">
-
-- The Green Algorithms online calculator makes it quick and easy to estimate the carbon footprint
-- Can be found here: <http://calculator.green-algorithms.org/>
-- There is also a Green Algorithms tool for HPC
-
-</div>
-
-Note:
-
-===
-
-<!-- .slide: data-state="empty-slide" data-background-iframe="http://calculator.green-algorithms.org/" -->
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## _Will these things help?_
-
-Note:
-
-Some practical considerations to discuss
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Yet more paperwork?
-
-- Is this just more work for researchers when filling out grant applications?
-- All applications must estimate the environmental impact of their models.
-- They did this in France and researchers still applied. The Green Algorithms Calculator was required to be used for the applications. Researchers accepted it was a fair request and still continued applying.
-- If a project is cheap financially, but has a large carbon cost, there should be an explicit justification why
-
-Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-### What is too much energy anyway?
-- Do the potential benefits outweigh the environmental costs?
-- **We should think of energy (or CO2) the same way we think of money**
-  - What matters is the _cost-benefit_ ratio
-  - Is €1M a lot? Not if it leads to curing a major disease
-- Currently researchers are used to making the scientific case for the money they request
-- They should also be able to make the case for the corresponding carbon footprint
-- The energy and carbon cost can often be hidden or abstracted from the researcher's perspective
-
-Note:
+### Key points
+
+- ICT energy use is significant and projected to increase greatly
+- Energy use has a strong dependence on clock frequency
+`$$ E \sim f^2 $$`
+- Most CO2 production comes from the usage of data centers not the building of them
 
 ===
 
