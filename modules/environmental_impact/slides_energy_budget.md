@@ -143,26 +143,25 @@ Here is something that adds to the story of “optimization of energy”: This C
 
 ### Data centers
 
-<div style="width: 40%; float: right">
+<div style="width: 45%; float: right;">
 
 * Compute and/or storage
 * Efficiency characterized by Power Usage Effectiveness (PUE)
-- `$$ PUE = P_{total\_facility} / P_{IT\_facility} $$`
-
+ `$$ PUE = P_{total} / P_{IT} $$`
 * Quantifies overhead. Gives you e.g. how much cooling power you need per unit of compute
 * Best data centers are now down to about 10% extra for cooling, but still large variability. Used to be around 100%.
 
 </div>
 
 
-<div style="width: 60%; float: left; margin-top: 1%">
+<div style="width: 55%; float: left; margin-top: 1%">
 
 ![Data center PUE](media/PUE_DataCenter.svg)
 
 </div>
 
 Note:
- - P_{IT_facility} in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
+ - $P_{IT}$ in PUE not limited to CPU/GPU, also include network, memory storage, backups, ...
 
 ===
 
@@ -235,11 +234,11 @@ Note:
 
 ### What does it mean for energy ?
  - More transistors lead to more power, but smaller transistors need less voltage 
- - CPU have a baseline (idle) power consumption (P_0), due to current leakage, unless closing circuit totally
+ - CPU have a baseline (idle) power consumption ($P_0$), due to current leakage, unless closing circuit totally
  - Active power consumption of CPUs: `$$ \sim P_0 + C * V(f)^2 * f \sim f^3 $$`
-    - f: clock rate
-    - V: voltage, higher voltage needed with higher clockrate to transfer information faster
- - Energy: power * time, time needed 1/f (fixed number of operations) ->
+    - $f$: clock rate
+    - $V$: voltage, higher voltage needed with higher clockrate to transfer information faster
+ - Energy: power * time, time needed $1/f$ (fixed number of operations) ->
     `$$ E \sim f^2 $$`
     
 Note:
@@ -257,7 +256,7 @@ Increases in clock rate cause a disproportionate increase in energy usage (since
 <div style="width: 40%; float: right">
 
 * Raw FLOPs data are not an appropriate measure of how efficient a CPU (or GPU) is.
-* The 10^8 increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
+* The 10$^8$ increase in FLOPs does not translate to needing a nuclear power plant to run Snellius.
 * Green500 ranks the Top500 supercomputer based on their power consumption since 2014.
 Compared to Koomey's prediction: factor 2 improvement every 1.57 years.
 
