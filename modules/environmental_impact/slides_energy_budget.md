@@ -117,6 +117,30 @@ Note:
 
 ===
 
+<!-- .slide: data-state="standard" -->
+
+### _Does optimizing matter?_
+
+<div style="width: 40%; float: left; margin-top: 1%">
+
+* Most CO2 comes from the usage of data centers not the building of them
+* Reducing your energy while running software indeed matters.
+
+</div>
+
+<div style="width: 60%; float: right">
+
+![Higher CO2 emissions from the use phase across ICT infrastructure](media/higher-co2-emissions-from-use-phase-across-ict-infrastructure.png)
+
+</div>
+
+
+Note:
+
+Here is something that adds to the story of “optimization of energy”: This CO2 footprint of use phase vs production phase shows that most of the CO2 comes from the usage of data centers not the building of them. So reducing your energy while running software indeed matters.
+
+===
+
 
 <!-- .slide: data-state="standard" -->
 
