@@ -13,9 +13,15 @@ order: 1
 <!-- .slide: data-state="standard" -->
 
 ### What we will cover here
-- What choices matter and when
-- What should you optimize and how do you know
-- What can you do if you can't change the code you're using
+- What development choices matter?
+- What should you optimize and how do you know?
+- What can you do if you can't change the code you're using?
+
+===
+
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
+
+### _What development choices matter?_
 
 ===
 
@@ -160,6 +166,14 @@ Note:
 
 ===
 
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
+
+### _What should you optimize and how do you know?_
+
+===
+
+
+
 <!-- .slide: data-state="standard" -->
 
 ### Don't optimize everything
@@ -170,27 +184,6 @@ Note:
 - Generally there are not enough RSEs to do all the coding and optimizations, and researchers don't have time
 
 Note:
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-### Minimizing energy (and carbon)
-
-<img src="media/carbon-aware-software.png" width="40%">
-
-- Think about _when_ we run a job on a server. Energy mix different at different times
-- Interesting new tools such as Carbon Aware Task Scheduler (UK-only currently)
-  - Tells you what is the best time to run in the next 48 hours
-- Think about what resources you request
-  - Number of CPU cores is clearly a large contributor
-  - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
-
-Note:
-Carbon awareness image is from <https://github.com/Green-Software-Foundation/carbon-aware-sdk>.
-
-Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
-
 
 ===
 
@@ -235,6 +228,13 @@ This sounds like a good place to start for researchers here.
 
 ===
 
+<!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
+
+### _What can you do if you can't change the code you're using?_
+
+===
+
+
 <!-- .slide: data-state="standard" -->
 
 ### What if I can't/won't change the code?
@@ -250,6 +250,28 @@ This sounds like a good place to start for researchers here.
 Note:
 
 ===
+
+<!-- .slide: data-state="standard" -->
+
+### Minimizing energy (and carbon)
+
+<img src="media/carbon-aware-software.png" width="40%">
+
+- Think about _when_ we run a job on a server. Energy mix different at different times
+- Interesting new tools such as Carbon Aware Task Scheduler (UK-only currently)
+  - Tells you what is the best time to run in the next 48 hours
+- Think about what resources you request
+  - Number of CPU cores is clearly a large contributor
+  - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
+
+Note:
+Carbon awareness image is from <https://github.com/Green-Software-Foundation/carbon-aware-sdk>.
+
+Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
+
+
+===
+
 
 <!-- .slide: data-state="standard" -->
 
@@ -275,6 +297,17 @@ In practice, reducing energy use overall is more about organizational policy and
 
 Image attribution:
 Sea Cow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### Key points
+  
+- Don't neglect good software development practices
+- The libraries you use can matter as much as language choice
+- Only optimize code if it will have impact (runs a lot, uses a lot of energy)
+- If you can't change the code, choose when/where to submit it or use a frequency scaling tool
 
 ===
 
