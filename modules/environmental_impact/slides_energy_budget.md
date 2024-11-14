@@ -174,13 +174,40 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### What is using the energy?
+### Data storage
+
+<div style="width: 55%; float: left; margin-top: 10%">
+
+* Different type of storage for different usages: latency, volume, ...
+* Very different energy consumption depending on state: idle, reading, writing
+* Storage efficiency (W/TB) strongly tied to technological solution
+* Storage efficiency has decreased over the years
+
+</div>
+
+<div style="width: 45%; float: right">
+
+![Storage Tier Efficiency](media/DataStorageEnergy.png)
+
+</div>
+
+Note: 
+
+ - Not a widely used ranking of storage technologies, but indicative of each Tier plus/minuses
+ - Lower table shows efficiency projection from 2013 to 2020. Figures assume a data center equiped
+with only a given Tier of storage
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+### Compute devices: processors
 
 <div style="width: 40%; float: left; margin-top: 1%">
 
-* Devices are powered by electricity.
-* Electrons themselves are used to perform the operations encoded in your softwares.
-* Number of operations processors can crunch per second has continuously increased.
+* Compute devices are powered by electricity
+* Electrons themselves are used to perform the operations encoded in your softwares
+* Number of operations processors can crunch per second has continuously increased
 
 </div>
 
@@ -192,10 +219,10 @@ Note:
 
 Note:
 
-Over the past 40 years, the number of operations processors
+- Over the past 40 years, the number of operations processors
 can crunch per second has continuously increased
 
-Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Patterson D. A., Computer Architecture (5th edition)) 
+- Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Patterson D. A., Computer Architecture (5th edition)) 
 
 ===
 
@@ -207,13 +234,13 @@ Figure: consumer CPU performances over 40 years (relative). (Hennessy J. and Pat
 
 Note:
 
-This trend extends to supercomputers (e.g. Snellius) and data centers. Top500 records performances
+ - This trend extends to supercomputers (e.g. Snellius) and data centers. Top500 records performances
 of the world's (500) biggest computers on the same problem for over 30 years:
 
-Initially growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
+ - Initially growth faster than Moore's law, but slowing down past 2013. Switch to GPUs around 2019
 kept the curve on track with Moore's law even though transitor/surface is increasing slower than Moore's law.
 
-Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
+ - Figure: now showing GFLOPs, blue biggest supercomputer, red average of the 500.
 
 ===
 
