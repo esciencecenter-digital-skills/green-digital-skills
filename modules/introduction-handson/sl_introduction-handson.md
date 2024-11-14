@@ -1,12 +1,12 @@
 ---
-title: Module 1
+title: Introduction
 type: slides
 order: 1
 ---
 
 <!-- .slide: data-state="title" -->
 
-# Module 1
+# Introduction hands-on workshop
 
 ===
 
