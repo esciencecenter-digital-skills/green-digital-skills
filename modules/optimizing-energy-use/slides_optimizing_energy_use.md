@@ -210,7 +210,7 @@ How to get maximum speed out of your code (including parallelism/accelerators) i
 ![](media/code-carbon.png)
 
 - We recommend trying `CodeCarbon` python package
-  - Estimates the amount of carbon dioxide (CO2) produced by the cloud or personal computing resources used to execute the code
+  - Estimates the amount of carbon dioxide (CO$_2$) produced by the cloud or personal computing resources used to execute the code
   - Gives recommendations for reducing emissions (e.g. through optimizing the code or by hosting cloud infrastructure in geographical regions that use renewable energy sources)
   - *More in this afternoon's hands-on workshop*
 
@@ -220,7 +220,7 @@ There are many ways to do energy profiling e.g. PMT (Power Measurement Toolkit),
 
 We recommend trying CodeCarbon
 
-The code-carbon.io website decribes it as "a lightweight software package that seamlessly integrates into your Python codebase. It estimates the amount of carbon dioxide (CO2) produced by the cloud or personal computing resources used to execute the code.
+The code-carbon.io website decribes it as "a lightweight software package that seamlessly integrates into your Python codebase. It estimates the amount of carbon dioxide (CO$_2$) produced by the cloud or personal computing resources used to execute the code.
 
 It then shows developers how they can lessen emissions by optimizing their code or by hosting their cloud infrastructure in geographical regions that use renewable energy sources."
 

@@ -36,7 +36,7 @@ order: 3
 
 Note:
 
-So far, we've talked about energy -> a proxy for CO2 emission, using the energy carbon intensity
+So far, we've talked about energy -> a proxy for CO$_2$ emission, using the energy carbon intensity
 
 ===
 
@@ -56,11 +56,11 @@ You can get an idea for real time carbon intensity in Europe here:
 <!-- .slide: data-state="standard" -->
 
 # Typical footprint
-- Carbon footprint of data centres anually is around 100 MT of CO2 equivalent
+- Carbon footprint of data centres anually is around 100 MT of CO$_2$ equivalent
   - That is the same as the entire US aviation in the same time.
   - Not all these data centres are doing HPC
-- About 500 Tonnes of CO2 estimated for training GPT3
-  - IPC says we should aim for 2 tonnes of CO2 per person per year to keep global warming in check. 
+- About 500 Tonnes of CO$_2$ estimated for training GPT3
+  - IPC says we should aim for 2 tonnes of CO$_2$ per person per year to keep global warming in check. 
   - Not every model has such huge impacts, but we need to be mindful
 
 Note:
@@ -197,7 +197,7 @@ Note:
 
 ### What is too much energy anyway?
 - Do the potential benefits outweigh the environmental costs?
-- **We should think of energy (or CO2) the same way we think of money**
+- **We should think of energy (or CO$_2$) the same way we think of money**
   - What matters is the _cost-benefit_ ratio
   - Is €1M a lot? Not if it leads to curing a major disease
 - Currently researchers are used to making the scientific case for the money they request
