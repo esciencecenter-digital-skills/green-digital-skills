@@ -28,7 +28,7 @@ order: 2
 
 ## Typical values of energy
 
-| Energy (J) | Examples | Equ. gCO2 |
+| Energy (J) | Examples | Equ. gCO$_2$ |
 | :-------- | -------: |--------:|
 | 1.0e0 | ??????????????????????????????????? | |
 | 1.0e1 | ??????????????????????????????????? | |
@@ -51,18 +51,18 @@ Press down arrow to see the examples for different orders of magnitude.
 
 ## Typical values of energy
 
-| Energy (J) | Examples | Equ. gCO2 |
+| Energy (J) | Examples | Equ. gCO$_2$ |
 | :-------- | -------: |--------:|
 | 1.0e0 | Lift an apple to your mouth | |
-| 1.0e1 |  | |
+| 1.0e1 | Tennis ball kin. energy at 220 km/h  | |
 | 1.0e2 |  | |
 | 1.0e3 (kJ) | Standby LED (0.3W) for 1 hour | |
 | 1.0e4 | LED-based lightbulb (3W) for 1 hour | |
 | 1.0e5 | 15 mn bike ride | |
 | 1.0e6 (MJ) | ~ 2km drive | |
-| 3.6e6 (1 kWh)|  | 305 |
+| 3.6e6 (1 kWh)| Bring 10L of water to boil | 305 |
 | 1.0e7 | Human energy need per day | |
-| 1.0e8 | Averaged daily cons. of NL home | |
+| 1.0e8 | Average daily cons. of 3 NL homes | |
 | 1.0e9 (0.27 MWh) | Round trip flight AMS-LON for 2 | |
 
 ===
@@ -83,7 +83,7 @@ Press down arrow to see the examples for different orders of magnitude.
 * Predicted major increase in electricity demand:
 - from 8% to 21% in 2030.
 
-* Responsible for about 2% of global CO2 emmisions, on par with the aviation sector.
+* Responsible for about 2% of global CO$_2$ emmisions, on par with the aviation sector.
 
 </div>
 
@@ -120,7 +120,7 @@ Note:
 
 <div style="width: 40%; float: left; margin-top: 1%">
 
-* Most CO2 comes from the usage of data centers not the building of them
+* Most CO$_2$ comes from the usage of data centers not the building of them
 * Reducing your energy while running software indeed matters.
 
 </div>
@@ -134,7 +134,7 @@ Note:
 
 Note:
 
-Here is something that adds to the story of “optimization of energy”: This CO2 footprint of use phase vs production phase shows that most of the CO2 comes from the usage of data centers not the building of them. So reducing your energy while running software indeed matters.
+Here is something that adds to the story of “optimization of energy”: This CO$_2$ footprint of use phase vs production phase shows that most of the CO$_2$ comes from the usage of data centers not the building of them. So reducing your energy while running software indeed matters.
 
 ===
 
@@ -309,7 +309,7 @@ Figure: now showing GFLOPs/Watts, compared to Koomey's prediction (CPU then GPU 
 - ICT energy use is significant and projected to increase greatly
 - Energy use has a strong dependence on clock frequency
 `$$ E \sim f^2 $$`
-- Most CO2 production comes from the usage of data centers not the building of them
+- Most CO$_2$ production comes from the usage of data centers not the building of them
 
 ===
 
