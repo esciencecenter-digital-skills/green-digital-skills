@@ -11,9 +11,6 @@ Choose an application from the list [below](#applications)
 ### 3. Play with PyTorch Automatic Mixed Precision, and maybe model "size". What impacts on Energy does this have?
 
 
-### lol
-
-
 ## Applications
 
 All of the Applications used in this tutorial can be found in the project space `/projects/0/energy-course/`
