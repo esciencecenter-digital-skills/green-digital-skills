@@ -1,3 +1,10 @@
+---
+title: Energy Aware Runtime
+type: exercise
+order: 3
+---
+
+
 # Energy Aware Runtime (EAR) Monitoring Tutorial
 
 >EAR documentation for use on Snellius here: https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=62226671
