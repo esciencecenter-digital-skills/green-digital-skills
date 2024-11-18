@@ -100,7 +100,7 @@ Table is from Pereira, R. et al. (2021) <doi:10.1016/j.scico.2021.102609>
 
 ### What language should I use?
 
-<div style="width: 50%; float: left; margin-top: 1%">
+<div style="width: 50%; float: left; margin-top: 10%; text-align: left;">
 
 - Let's use C for everything!
 
@@ -125,7 +125,7 @@ Table is from Pereira, R. et al. (2021) <doi:10.1016/j.scico.2021.102609>
 
 ### What language should I use?
 
-<div style="width: 50%; float: left; margin-top: 1%">
+<div style="width: 50%; float: left; margin-top: 10%; text-align: left;">
 
 - Let's use C for everything!
 - Please don't. Reality is more nuanced.
@@ -227,6 +227,24 @@ It then shows developers how they can lessen emissions by optimizing their code 
 This sounds like a good place to start for researchers here.
 
 ===
+
+
+<img src="media/codecarbon_dashboard_screenshot.png" width="100%" />
+
+Note:
+
+Screenshot from the website to illustrate functionality: <https://codecarbon.io/#howitwork>
+
+In principle there is a dashboard showing your usage in the context of everyday values,
+as well as suggestions for where to run your cloud workflows to reduce carbon cost (assuming
+you have control over this).
+
+However, getting the dashboard locally is not really possible/easy yet unfortunately.
+CodeCarbon is promising and developing fast, with lots of interested parties, so
+a good choice for the future.
+
+===
+
 
 <!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
