@@ -255,14 +255,18 @@ a good choice for the future.
 
 <!-- .slide: data-state="standard" -->
 
-### What if I can't/won't change the code?
+### Change how you run it
+
 
 - Perhaps you can profile the code but you cannot do much with the results
   - e.g. You are not the developer, or don't feel experienced enough
-- There are tools such as the Energy Aware Runtime
+
+<img src="media/ear-logo.png" width="40%" style="padding-top: 1cm;"/>
+
+- Tools like the Energy Aware Runtime can help
   - Dynamically scales the CPU or GPU clock frequency up or down while the code is running
   - When code is waiting a lot (for I/O or memory), frequency is scaled down
-  - Remember that Energy ~ frequency^2
+  - Remember that Energy ~ frequency$^2$
   - *Also covered in this afternoon's hands-on workshop (HPC-track)*
 
 Note:
@@ -271,18 +275,18 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### Minimizing energy (and carbon)
+### Change when you run it
 
-<img src="media/carbon-aware-software.png" width="40%">
+<img src="media/carbon-aware-software.png" width="60%">
 
-- Think about _when_ we run a job on a server. Energy mix different at different times
 - Interesting new tools such as Carbon Aware Task Scheduler (UK-only currently)
   - Tells you what is the best time to run in the next 48 hours
 - Think about what resources you request
   - Number of CPU cores is clearly a large contributor
-  - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
+  - Carbon footprint of memory is interesting - doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
 
 Note:
+
 Carbon awareness image is from <https://github.com/Green-Software-Foundation/carbon-aware-sdk>.
 
 Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.
