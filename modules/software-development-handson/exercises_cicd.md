@@ -39,10 +39,25 @@ Certain test workflows do not need to run on every push, for example, and could 
 [GitHub docs on triggering workflows](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)
 
 
+### 4. Test on different platforms/versions that make sense
+It is possible to run your automated tests on several platforms (e.g. different versions of Ubuntu, MacOS and Windows) and also on different kinds of software stack (different libraries, `python` versions etc.). On GitHub, for example, this can be done using [`matrix` strategies](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow). This is generally desirable, in order to ensure portability across systems.
+
+However, testing all these combinations comes at a cost. It is important to think about how many users you have (maybe it is just you and some colleagues) and whether what you are testing is actually necessary. For example, supporting every python version from the last 10 years is probably overkill and will waste a lot of energy.
+
+
+### 5. Create dependencies between tests
+
+Continuing to run all tests when one has failed does not always make sense. For example, if a basic linting step has failed, it may be desirable not to run the remaining test suite until that is fixed.
+
+With GitHub actions this is possible by making dependencies between your jobs: [see relevant example here](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-jobs-in-a-workflow#example-requiring-successful-dependent-jobs).
+
+Alterntively, you may wish to only run the linting tests once the basic tests pass (i.e. no point linting broken code). Which way of adding dependencies is best at reducing unnecessary tests running is dependent on your specific setup.
+
+
 ### Other tools/plugins worth a look
 
-Alternatively, a pytest plugin that only runs tests that concern code that has been affected by changes (interesting but challenging, and possibly unreliable):
-* pytest-testmon: <https://github.com/tarpas/pytest-testmon>
+A possible alternative to `pytest-last-failed`:
+* pytest-testmon: <https://github.com/tarpas/pytest-testmon>, a pytest plugin that only runs tests that concern code that has been affected by changes (interesting but challenging, and possibly unreliable)
 
 
 ## Conclusion
