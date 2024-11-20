@@ -7,7 +7,7 @@ order: 4
 # Make your automated testing framework use less energy
 
 ## Testing is necessary
-A robust testing framework is an essential part of good software development practices. It is even more vital in a research environment since wrong or misleading scientific results may be caused by bad or insufficient testing. Testing aids in scientific reproducibility and reduces the amount of time wasted trying to go back to find which version still worked with a given feature.
+A robust testing framework is an essential part of good software development practices. It is even more vital in a research environment since wrong or misleading scientific results may be caused by bad or insufficient testing. Automated testing aids in scientific reproducibility and reduces the amount of time wasted trying to go back to find which version still worked with a given feature.
 
 If you are unsure about what a testing framework is or how to set one up, you can learn about it in the [Good Practices](exercises_good-practices) exercises of this hands-on module (specifically, it is [step 4](exercises_good-practices#_4-testing). Adding tests to your scientific code is a good step towards avoiding wasted energy in the long run.
 
