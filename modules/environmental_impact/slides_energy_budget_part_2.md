@@ -113,7 +113,7 @@ Note:
 <div style="width: 40%; float: right; margin-top: 1%">
 
 - The Green Algorithms online calculator makes it quick and easy to estimate the carbon footprint
-- Can be found here: <http://calculator.green-algorithms.org/>
+- Can be found here: <https://calculator.green-algorithms.org/>
 - There is also a Green Algorithms tool for HPC
 
 </div>
@@ -122,7 +122,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="empty-slide" data-background-iframe="http://calculator.green-algorithms.org/" -->
+<!-- .slide: data-state="empty-slide" data-background-iframe="https://calculator.green-algorithms.org/" -->
 
 ===
 
