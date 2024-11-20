@@ -19,7 +19,7 @@ But there are ways to mimimize the amount of energy used.
 The defaults used by most people when adding automated tests to their code base are often wasteful, due to many tests being run when it is not necessary.
 
 ## Reduce energy waste from unnecessary testing
-In the following we address some relatively simple changes that can be made to reduce the unnecessary runnng of tests.
+In the following we address some relatively simple changes that can be made to reduce the unnecessary running of tests.
 The solutions are given for projects that use `pytest` (the ubiquitous python testing framework) and automation using features of [GitHub](www.github.com), which is a very common place to host code repositories. However, if you are using a different language (e.g. `R`) or you do not use GitHub (maybe GitLab, bitbucket etc) then the general principle should still apply. It may be possible to recreate the same changes by modifying the relevant configuration (we will try to help where we can).
 
 ### 1. Cancel running workflows on a new push
