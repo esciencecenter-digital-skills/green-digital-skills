@@ -7,6 +7,6 @@
     "organization": "Netherlands eScience Center",
     "organizationURL": "https://www.esciencecenter.nl",
     "organizationLogo": "main/media/nlesc-surf.svg",
-    "categoryOrder": ["Introduction", "Lecture", "Workshop"]
+    "categoryOrder": ["Lecture", "Workshop"]
   }
 }
