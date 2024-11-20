@@ -36,6 +36,7 @@ We use a *choose your own adventure approach* in this hands-on part of the works
 
 Note:
 We have two modules, each with various chapters or exercises. It is not possible to finish everything. 
+
 ===
 
 <!-- .slide: data-state="standard" -->
