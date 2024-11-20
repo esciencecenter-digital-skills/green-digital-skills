@@ -16,11 +16,13 @@ While this workshop is a lot about optimizing the use of computers for sustainab
 
 <small>
 Some suggestions:
+
 - Policies at work regarding environmental sustainability, are there any and if so, are they good enough?
 - Go to work by bike/public transport instead of by car
 - Rethink your presence at scientific conferences, if you need to go, can you travel by train instead of airplane?
 - What bank/energe provider/insurrance company does your organization use? Can you make them switch to a more sustainable option?
 - How is catering arranged? Are there enough plant based options? Some organizations decide to only serve plant based food, is this an option?
+
 </small>
 
 PS. You can do the same for your personal home environment!
