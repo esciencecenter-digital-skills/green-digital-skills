@@ -6,7 +6,7 @@
     "repoOwner": "esciencecenter-digital-skills",
     "organization": "Netherlands eScience Center",
     "organizationURL": "https://www.esciencecenter.nl",
-    "organizationLogo": "main/media/nlesc-logo.svg",
+    "organizationLogo": "main/media/nlesc-surf.svg",
     "categoryOrder": ["Introduction", "Lecture", "Workshop"]
   }
 }
