@@ -233,7 +233,9 @@ if __name__ == "__main__":
         subprocess.call (["/usr/bin/Rscript", "--vanilla", "/pathto/MyrScript.r"])
 ```
 Note that because the script R script is executed in an external process, the option ```tracking_mode = "process"```
-is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant.
+is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant. You
+should thus be aware of the other programs running on your computer (e.g. a web brower with video streaming) as their
+CPU usage will be measured as well, and for more accurate measurements those programs should be terminated.
 
 ## Conclusion
 -------------
