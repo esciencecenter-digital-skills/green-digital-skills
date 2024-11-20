@@ -29,7 +29,7 @@ order: 1
 
 <div style="width: 40%; float: right">
 
-<img src="media/nlesc.svg" width="50%" />
+<img src="media/nlesc.svg" width="50%" style="margin-bottom:3cm;"/>
 
 <img src="media/surf.svg" width="50%" />
 
@@ -39,11 +39,39 @@ order: 1
 
 <!-- .slide: data-state="standard" -->
 
+### Why do we care?
+
+![Relevant projects at NLeSC](media/relevant-projects.png)
+
+
+Note:
+At eScience Center we have many projects concerning environmental destruction due to climate change.
+We all have expertise in HPC and (computationally) efficient computing so the energy aspects are increasingly interesting to us too.
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+![More projects](media/more_projects.png)
+
+
+Note:
+
+The TulipaEnergyModel is developed as part of a project to make optimal decisions in the electricity energy market, taking into account its interactions and couplings with other energy sectors (including various renewables).
+
+KernelTuner helps to optimize your GPU kernel code within certain chosen metrics, which can be chosen to help lower overall energy cost.
+
+===
+
+
+<!-- .slide: data-state="standard" -->
+
 ### Before we start
 
+- This is a pilot workshop - this is the first time we teach this.
 - You are a diverse crowd!
-- No one-size-fits-all approach to going green
-- This is a broad and high-level introduction to a broad, deep area
+  - No "one-size-fits-all" approach
+  - This is a broad and high-level introduction to a very deep area
 - We want to help you find the aspect you are interested in and get you set up
 
 Note:
@@ -73,29 +101,6 @@ We want you to get set up with the tools you might need and know where to look t
 | 14:45-15:15 | Wrap up & drinks |
 
 ===
-
-<!-- .slide: data-state="standard" -->
-
-## Why do you care about "Green Computing"?
-
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-### Why do we care?
-
-![Relevant projects at NLeSC](media/relevant-projects.png)
-
-Note:
-At eScience Center we have many projects concerning environmental destruction due to climate change.
-We all have expertise in HPC and (computationally) efficient computing so the energy aspects are increasingly interesting to us too.
-
-===
-
-
-
 
 <!-- .slide: data-state="keepintouch" -->
 

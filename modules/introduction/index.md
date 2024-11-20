@@ -1,6 +1,6 @@
 ---
-id: 1
-category: Introduction
+order: 1
+category: Lecture
 title: Introduction
 author: eScience Center
 thumbnail: "burning.jpeg"

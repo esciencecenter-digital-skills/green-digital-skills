@@ -100,7 +100,7 @@ Table is from Pereira, R. et al. (2021) <doi:10.1016/j.scico.2021.102609>
 
 ### What language should I use?
 
-<div style="width: 50%; float: left; margin-top: 1%">
+<div style="width: 50%; float: left; margin-top: 10%; text-align: left;">
 
 - Let's use C for everything!
 
@@ -125,7 +125,7 @@ Table is from Pereira, R. et al. (2021) <doi:10.1016/j.scico.2021.102609>
 
 ### What language should I use?
 
-<div style="width: 50%; float: left; margin-top: 1%">
+<div style="width: 50%; float: left; margin-top: 10%; text-align: left;">
 
 - Let's use C for everything!
 - Please don't. Reality is more nuanced.
@@ -210,7 +210,7 @@ How to get maximum speed out of your code (including parallelism/accelerators) i
 ![](media/code-carbon.png)
 
 - We recommend trying `CodeCarbon` python package
-  - Estimates the amount of carbon dioxide (CO2) produced by the cloud or personal computing resources used to execute the code
+  - Estimates the amount of carbon dioxide (CO$_2$) produced by the cloud or personal computing resources used to execute the code
   - Gives recommendations for reducing emissions (e.g. through optimizing the code or by hosting cloud infrastructure in geographical regions that use renewable energy sources)
   - *More in this afternoon's hands-on workshop*
 
@@ -220,13 +220,31 @@ There are many ways to do energy profiling e.g. PMT (Power Measurement Toolkit),
 
 We recommend trying CodeCarbon
 
-The code-carbon.io website decribes it as "a lightweight software package that seamlessly integrates into your Python codebase. It estimates the amount of carbon dioxide (CO2) produced by the cloud or personal computing resources used to execute the code.
+The code-carbon.io website decribes it as "a lightweight software package that seamlessly integrates into your Python codebase. It estimates the amount of carbon dioxide (CO$_2$) produced by the cloud or personal computing resources used to execute the code.
 
 It then shows developers how they can lessen emissions by optimizing their code or by hosting their cloud infrastructure in geographical regions that use renewable energy sources."
 
 This sounds like a good place to start for researchers here.
 
 ===
+
+
+<img src="media/codecarbon_dashboard_screenshot.png" width="100%" />
+
+Note:
+
+Screenshot from the website to illustrate functionality: <https://codecarbon.io/#howitwork>
+
+In principle there is a dashboard showing your usage in the context of everyday values,
+as well as suggestions for where to run your cloud workflows to reduce carbon cost (assuming
+you have control over this).
+
+However, getting the dashboard locally is not really possible/easy yet unfortunately.
+CodeCarbon is promising and developing fast, with lots of interested parties, so
+a good choice for the future.
+
+===
+
 
 <!-- .slide: data-state="standard" data-background-gradient="radial-gradient(rgb(230, 200, 255), rgb(255, 255, 255))" -->
 
@@ -237,14 +255,18 @@ This sounds like a good place to start for researchers here.
 
 <!-- .slide: data-state="standard" -->
 
-### What if I can't/won't change the code?
+### Change how you run it
+
 
 - Perhaps you can profile the code but you cannot do much with the results
   - e.g. You are not the developer, or don't feel experienced enough
-- There are tools such as the Energy Aware Runtime
+
+<img src="media/ear-logo.png" width="40%" style="padding-top: 1cm;"/>
+
+- Tools like the Energy Aware Runtime can help
   - Dynamically scales the CPU or GPU clock frequency up or down while the code is running
   - When code is waiting a lot (for I/O or memory), frequency is scaled down
-  - Remember that Energy ~ frequency^2
+  - Remember that Energy ~ frequency$^2$
   - *Also covered in this afternoon's hands-on workshop (HPC-track)*
 
 Note:
@@ -253,18 +275,18 @@ Note:
 
 <!-- .slide: data-state="standard" -->
 
-### Minimizing energy (and carbon)
+### Change when you run it
 
-<img src="media/carbon-aware-software.png" width="40%">
+<img src="media/carbon-aware-software.png" width="60%">
 
-- Think about _when_ we run a job on a server. Energy mix different at different times
 - Interesting new tools such as Carbon Aware Task Scheduler (UK-only currently)
   - Tells you what is the best time to run in the next 48 hours
 - Think about what resources you request
   - Number of CPU cores is clearly a large contributor
-  - Carbon footprint of memory is interesting - it doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
+  - Carbon footprint of memory is interesting - doesn't matter how much you use, but how much is available. Don't request 10 times the memory you need on a server "just in case"
 
 Note:
+
 Carbon awareness image is from <https://github.com/Green-Software-Foundation/carbon-aware-sdk>.
 
 Most jobs have some flexibility - we don't care if we run it right now or in a few hours. Especially over the weekend.

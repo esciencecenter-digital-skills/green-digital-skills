@@ -13,6 +13,6 @@ In this module you will learn to answer the following questions:
 * What is an energy budget and what is it for?
 * How can we quantify our environmental impact?
 * What are typical values of energy usage?
-* How much CO2 is produced and how does this depend on the country and time of day?
+* How much CO$_2$ is produced and how does this depend on the country and time of day?
 * Where in my workflow is energy primarily consumed?
 * What are significant sources of energy usage that I might not expect?

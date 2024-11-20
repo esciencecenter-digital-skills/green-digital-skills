@@ -41,7 +41,7 @@ It is recommended to setup a dedicated environment using a package
 and environment management tool such as [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) to avoid disrupting the packages currently available
 on your computer. However, this step is not mandatory.
 
-### On MacOS:
+### On MacOS and Linux:
 
 #### Using Conda:
 
@@ -73,9 +73,14 @@ python -c "from codecarbon import OfflineEmissionsTracker; print('SUCCESS')"
 ```
 If CodeCarbon was successfully installed, the command will simply return 'SUCCESS'.
 
-### On Linux:
 
 ### On Windows
+
+The above installation instructions should work on Windows if using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+If not, it is generally easiest to install python packages using conda which can be installed according to [these instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html).
+
+If you have another setup or requirements then please ask - we will do our best to help you get set up!
 
 
 ## Using CodeCarbon: a first example
@@ -228,7 +233,9 @@ if __name__ == "__main__":
         subprocess.call (["/usr/bin/Rscript", "--vanilla", "/pathto/MyrScript.r"])
 ```
 Note that because the script R script is executed in an external process, the option ```tracking_mode = "process"```
-is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant.
+is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant. You
+should thus be aware of the other programs running on your computer (e.g. a web brower with video streaming) as their
+CPU usage will be measured as well, and for more accurate measurements those programs should be terminated.
 
 ## Conclusion
 -------------
