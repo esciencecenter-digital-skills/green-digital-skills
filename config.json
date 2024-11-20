@@ -4,7 +4,7 @@
     "baseURL": "green-digital-skills",
     "repoName": "green-digital-skills",
     "repoOwner": "esciencecenter-digital-skills",
-    "organization": "Netherlands eScience Center",
+    "organization": "Netherlands eScience Center and SURF",
     "organizationURL": "https://www.esciencecenter.nl",
     "organizationLogo": "main/media/nlesc-surf.svg",
     "categoryOrder": ["Lecture", "Workshop"]
