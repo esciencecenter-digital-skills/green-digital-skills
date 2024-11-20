@@ -1,7 +1,7 @@
 ---
 title: Exercises
 type: exercise
-order: 3
+order: 4
 ---
 
 ## Exercises
