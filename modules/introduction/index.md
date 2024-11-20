@@ -1,5 +1,4 @@
 ---
-id: 1
 order: 1
 category: Lecture
 title: Introduction
