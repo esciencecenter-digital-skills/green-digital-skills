@@ -3,6 +3,7 @@ order: 1
 category: Workshop
 title: Introduction
 author: eScience Center
+abstract: Putting this workshop in perspective. Why are you here, where lie your interests, what can you do beyond this workshop?
 thumbnail: "introduction-thumbnail.jpg"
 visibility: visible
 ---

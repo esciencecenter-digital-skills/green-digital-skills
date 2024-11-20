@@ -12,15 +12,42 @@ order: 1
 
 <!-- .slide: data-state="standard" -->
 
-## Title of the first slide
+## Choose your own adventure
 
-<center>
-<img src="media/fig-dummy.png" width="55%">
-</center>
+![yellow-and-black-arrow-sign](media/image.png)
+
+<small>Photo by <a href="https://unsplash.com/@khyta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Khyta</a> on <a href="https://unsplash.com/photos/yellow-and-black-arrow-sign-ifJiAtVRthI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </small>
+
+Note:
+We use a *choose your own adventure approach* in this hands-on part of the workshop to acommodate for the variety in skill sets. 
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## Choose your own adventure
+
+* Software development
+  * Good practices
+  * CI/CD optimization
+  * Code Carbon, measuring 
+* High Performance Computing
+
+Note:
+We have two modules, each with various chapters or exercises. It is not possible to finish everything. 
+===
+
+<!-- .slide: data-state="standard" -->
+
+## This website is here to stay
+
+* Come back to do the other exercises
+* Share with others who are interested
+* Help us build this, contribute to the contents!
 
 Note:
 
-Add notes to the presenter...
 
 ===
 
