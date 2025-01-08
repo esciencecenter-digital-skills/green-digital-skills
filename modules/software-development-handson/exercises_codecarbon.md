@@ -209,108 +209,6 @@ emissions can be reduced, mostly due to a shorter runtime. Feel free to experime
  - try an alternative implementation of the distance computation
  - add timers to the script to estimate if the average power, is it changing between the two provided implementation ?
 
-## Calling CodeCarbon in an R script
-------------------------------------
-
-The following workflow is available in this [R script](https://github.com/javimangal/green-digital-skills-r/blob/main/R/code-carbon-script.R), which you can reuse and adapt to test your code.
-
-First, you will need to install the `reticulate` package and load it into your session: 
-
-```
-install.packages("reticulate")
-library(reticulate)
-```
-Load the CodeCarbon module using the reticulate [`import`](https://rstudio.github.io/reticulate/reference/import.html) function.
-
-```
-codecarbon <- import("codecarbon")
-```
-
-Import the OfflineEmissionsTracker class
-
-```
-OfflineEmissionsTracker <- codecarbon$OfflineEmissionsTracker
-```
-
-Set the emission trackers parameter and initialize. This will automatically detect your system's characteristics and open a file to save the report later on. You can also specify the country code, timing of measurements, among others. See the [CodeCarbon documentation](https://mlco2.github.io/codecarbon/parameters.html#id6) for more details: 
-
-```
-tracker <- OfflineEmissionsTracker(
-  country_iso_code = "NLD",
-  measure_power_secs = 5
-)
-```
-
-Start tracking the emissions, run your code, and finish tracking once your code ran. 
-
-```
-tracker$start()
-
-# Your R code here
-
-tracker$stop()
-```
-
-This will terminate the report and save it in your default working directory, unless you specified earlier the path to save it according to the provided documentation.
-
-Note that CodeCarbon will continue to track until you explicitly stop it with `tracker$stop()`. Thus, you may want to run all lines of code from start -> code -> stop in one go to measure the consumption of that specific code. 
-
-## Calling CodeCarbon in an Quarto markdown (qmd) file in RStudio
------------------------------------------------------------------
-
-If you use Quarto, you can call Python and R code in the same document, using their native syntax. For this, you can specify the language of the code block using the `python` or `r` tags: 
-
-```
-{python}
-
-```
-
-```
-{r}
-
-```
-
-RStudio automatically process the programming language. R is the default language in Quarto when introducing code blocks. If you want to run Python code, you need to change `r` for the the `python` tag. 
-
-The advantage of using quarto is that you don't need to rewrite python code into the `reticulate` syntax. You can simply copy and paste the python code into the `python` code block. This is a great advantage when you are not familiar with Python, when you want to reuse well-documented native python code, or simply to efficiently communicate with python programmers.
-
-Because Rstudio loads the reticulate package once it reads the `python` tag, you don't need to load the `reticulate` package in the code block. Thus, we will start by calling the CodeCarbon module in Python. 
-
-```
-{python}
-# Load the CodeCarbon module
-from codecarbon import EmissionsTracker
-```
-
-Then, we will initialize the tracker and start tracking the emissions. 
-
-```
-{python}
-# Initialize the tracker
-tracker = OfflineEmissionsTracker(country_iso_code="NLD",
-                                 measure_power_secs=5)
-
-# Start tracking the emissions
-tracker.start()
-```
-
-You can now change to R language by using the `r` tag.
-
-```
-{r}
-# Introduce your R code here. For example, a fictitious computationally 
-# intensive function for which you would like to test it's energy consumption. 
-intense_computation(large_dataset)
-```
-
-Finally, you can stop tracking the emissions and print the results. You will again find the report as a csv file in your default working directory. 
-
-```
-{python}
-emissions: float = tracker.stop()
-print(emissions)
-```
-
 ## Using CodeCarbon: your own code
 ----------------------------------
 If your target code is based on Python, the simplest way to adapt the small example provided above to
@@ -338,6 +236,8 @@ Note that because the script R script is executed in an external process, the op
 is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant. You
 should thus be aware of the other programs running on your computer (e.g. a web brower with video streaming) as their
 CPU usage will be measured as well, and for more accurate measurements those programs should be terminated.
+
+For a full tutorial of the use of CodeCarbon in R workflows, please refer to the next lesson.
 
 ## Conclusion
 -------------
