@@ -1,5 +1,5 @@
 ---
-title: Code Carbon
+title: "Code Carbon"
 type: exercise
 order: 5
 ---
@@ -236,6 +236,8 @@ Note that because the script R script is executed in an external process, the op
 is no longer adapted and only the mode where the CPU usage of the entire computer is measured is relevant. You
 should thus be aware of the other programs running on your computer (e.g. a web brower with video streaming) as their
 CPU usage will be measured as well, and for more accurate measurements those programs should be terminated.
+
+For a full tutorial of the use of CodeCarbon in R workflows, please refer to the next lesson.
 
 ## Conclusion
 -------------
